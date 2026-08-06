@@ -1,0 +1,42 @@
+
+/* ============ Row Scroll 
+.row-scroll{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+    scrollbar-color:#797979 #000000;
+    cursor:grab;
+    user-select:none;
+    padding-bottom:12px;
+}
+
+.row-scroll:active{
+    cursor:grabbing;
+}
+
+.row-scroll::-webkit-scrollbar{
+    height:6px;
+}
+
+.row-scroll::-webkit-scrollbar-track{
+    background:#797979;
+    border-radius:20px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb{
+    background:#797979;
+    border-radius:20px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb:hover{
+    background:#797979;
+}
+
+.row-scroll>*{
+    flex:0 0 auto;
+}
+
+============ */

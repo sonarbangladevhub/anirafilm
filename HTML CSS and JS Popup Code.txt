@@ -1,0 +1,263 @@
+<!-- ============================================================ HTML Popup Code============================================================ -->
+
+<!-- Popup -->
+	
+<div id="popupOverlay" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <button id="popupClose" class="popup-close">&times;</button>
+
+        <img
+            id="popupImage"
+            class="popup-image img-fluid"
+            src="https://github.com/sharifbinmostafa/website-movie-tmdb/blob/main/hasina-modi-popup-.jpg?raw=true"
+            alt="Popup">
+
+    </div>
+
+</div>
+
+
+/* ============ CSS Popup Code============ */
+
+/* ===========================
+   FULL SCREEN POPUP
+=========================== */
+
+	
+.popup-overlay{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.72);
+
+    z-index:2147483647;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+}
+
+
+/* Popup Box */
+ 
+.popup-box{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:700px;
+
+    background:#ffffff;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.45);
+
+    animation:popupZoom .3s ease;
+
+}
+
+/* Image */
+ 
+.popup-image{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+/* Close */
+
+.popup-close{
+
+    position:absolute;
+
+    top:-15px;
+
+    right:-15px;
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#000;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:999999;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.35);
+
+}
+
+.popup-close:hover{
+
+    background:#ff0000;
+
+    color:#fff;
+
+}
+
+@keyframes popupZoom{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.popup-box{
+
+    max-width:95%;
+
+}
+
+.popup-close{
+
+    width:34px;
+
+    height:34px;
+
+    top:-12px;
+
+    right:-12px;
+
+    font-size:22px;
+
+}
+
+}
+
+
+
+/* ---------------- JS Popup Code---------------- */
+
+(function(){
+
+    function showPopup(){
+
+        var popup=document.getElementById("popupOverlay");
+
+        if(popup){
+
+            popup.style.display="flex";
+
+        }
+
+    }
+
+    function hidePopup(){
+
+        var popup=document.getElementById("popupOverlay");
+
+        if(popup){
+
+            popup.style.display="none";
+
+        }
+
+    }
+
+    // Close button
+    document.addEventListener("click",function(e){
+
+        if(e.target.id==="popupClose"){
+
+            hidePopup();
+
+        }
+
+    });
+
+    // Close outside
+    document.addEventListener("click",function(e){
+
+        var popup=document.getElementById("popupOverlay");
+
+        if(e.target===popup){
+
+            hidePopup();
+
+        }
+
+    });
+
+    // Wait until page is fully ready
+    function ready(){
+
+        setTimeout(showPopup,1200);
+
+    }
+
+    if(document.readyState==="complete"){
+
+        ready();
+
+    }else{
+
+        window.addEventListener("load",ready,false);
+
+        document.addEventListener("DOMContentLoaded",ready,false);
+
+        document.addEventListener("readystatechange",function(){
+
+            if(document.readyState==="complete"){
+
+                ready();
+
+            }
+
+        });
+
+    }
+
+})();
+
+
+

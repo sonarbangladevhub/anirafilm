@@ -1,0 +1,2209 @@
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<!-- LOGO https://images.icon-icons.com/2890/PNG/512/apps_media_netflix_logo_website_movie_series_multimedia_streaming_stream_icon_182738.png / https://www.zilliondesigns.com/blog/wp-content/uploads/feature-img-min.png-->
+<link href='https://github.com/sharifbinmostafa/website-movie-tmdb/blob/main/Final-Anira-Logo.png?raw=true' rel='icon' type='image/x-icon'/>
+<link href='https://sonarbangladevhub.xyz/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Sonarbangla Dev Hub - Atom" href="https://bingehall.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Sonarbangla Dev Hub - RSS" href="https://bingehall.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Sonarbangla Dev Hub - Atom" href="https://www.blogger.com/feeds/847261708778445689/posts/default" />
+<link rel="me" href="https://www.blogger.com/profile/17193350796582376140" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='https://bingehall.blogspot.com/' property='og:url'/>
+<meta content='Anira Film' property='og:title'/>
+<meta content='' property='og:description'/>
+<title>Anira Film</title>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1.0, viewport-fit=cover' name='viewport'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='#08080c' name='theme-color'/>
+<meta content='A modern movie & TV discovery experience — trending titles, trailers, cast, ratings, and where to watch legally.' name='description'/>
+<link href='https://fonts.googleapis.com' rel='preconnect'/>
+<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+<link href='https://api.themoviedb.org' rel='preconnect'/>
+<link href='https://image.tmdb.org' rel='preconnect'/>
+<link href='https://cdnjs.cloudflare.com' rel='preconnect'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
+<style id='page-skin-1' type='text/css'><!--
+/* ================================================================
+CINEVERSE &#8212; Modern Movie & TV Discovery Theme
+Design system: "Aurora Dark" &#8212; glassmorphism, violet/pink accent
+================================================================ */
+:root{
+--bg:#08080c; --bg-2:#0e0e16; --bg-3:#13131e;
+--surface:rgba(255,255,255,.04); --surface-2:rgba(255,255,255,.07);
+--surface-3:rgba(255,255,255,.1);
+--border:rgba(255,255,255,.08); --border-2:rgba(255,255,255,.14);
+--text:#f4f4f8; --text-2:#aeaec4; --text-3:#6f6f86;
+--accent:#7c5cff; --accent-2:#ff5d8f; --accent-3:#39d3ff;
+--gold:#ffc24b;
+--grad:linear-gradient(135deg,#7c5cff 0%,#ff5d8f 100%);
+--grad-soft:linear-gradient(135deg,rgba(124,92,255,.18),rgba(255,93,143,.18));
+--btn-bg:#181824; --btn-bg-hover:#2b2940;
+--btn-bg-active:#34304c; --btn-border:#433d58;
+--hover-bg:#463f66; --hover-border:#7b70a5;
+--hover-text:#f7f4ff; --hover-shadow:0 12px 30px -18px rgba(124,92,255,.56);
+--watch-bg:#254c57; --watch-hover:#2e6270; --watch-border:#4f8391;
+--watch-text:#f2fbff; --watch-shadow:0 14px 34px -20px rgba(57,211,255,.5);
+--radius:18px; --radius-sm:12px; --radius-lg:26px; --radius-pill:999px;
+--shadow:0 18px 50px -12px rgba(0,0,0,.7);
+--shadow-glow:0 10px 40px -8px rgba(124,92,255,.45);
+--t-fast:.18s cubic-bezier(.4,0,.2,1);
+--t:.32s cubic-bezier(.4,0,.2,1);
+--maxw:1320px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;}
+body{
+font-family:'Outfit',system-ui,-apple-system,sans-serif;
+background:var(--bg); color:var(--text);
+line-height:1.6; overflow-x:hidden; min-height:100vh;
+background-image:
+radial-gradient(1100px 600px at 12% -8%,rgba(124,92,255,.16),transparent 60%),
+radial-gradient(900px 500px at 95% 0%,rgba(255,93,143,.12),transparent 55%);
+background-attachment:fixed;
+}
+h1,h2,h3,h4,.font-display{font-family:'Sora',sans-serif;letter-spacing:-.02em;}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+input{font-family:inherit;}
+::selection{background:var(--accent);color:#fff;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(16px,4vw,40px);}
+/* Scrollbar */
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:10px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--accent);}
+/* ============ PROGRESS BAR ============ */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;
+background:var(--grad);box-shadow:0 0 12px var(--accent);transition:width .3s ease,opacity .3s;opacity:0;}
+#progress.on{opacity:1;}
+/* ============ TOAST ============ */
+#toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(30px);
+z-index:9000;background:rgba(20,20,30,.9);backdrop-filter:blur(20px);
+border:1px solid var(--border-2);border-radius:var(--radius-pill);
+padding:12px 22px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px;
+opacity:0;pointer-events:none;transition:var(--t);box-shadow:var(--shadow);}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+#toast i{font-size:17px;}
+#toast.success i{color:#37e08f;} #toast.error i{color:#ff5d6c;} #toast.info i{color:var(--accent-3);}
+/* ============ NAVBAR ============ */
+.nav{position:sticky;top:0;z-index:800;transition:var(--t);}
+.nav-inner{display:flex;align-items:center;gap:18px;height:70px;
+background:rgba(10,10,16,.55);backdrop-filter:blur(22px) saturate(160%);
+border-bottom:1px solid transparent;transition:var(--t);}
+.nav.scrolled .nav-inner{background:rgba(8,8,12,.82);border-bottom-color:var(--border);}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora';font-weight:800;
+font-size:21px;cursor:pointer;flex-shrink:0;}
+.logo-mark{width:38px;height:38px;border-radius:11px;background:transparent(--grad);
+display:grid;place-items:center;font-size:17px;color:#fff;box-shadow:var(--shadow-glow);}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links{display:flex;gap:4px;margin-left:14px;}
+.nav-link{padding:9px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:14.5px;
+color:var(--text-2);transition:var(--t-fast);position:relative;}
+.nav-link:hover{color:var(--hover-text);background:var(--hover-bg);}
+.nav-link.active{color:var(--text);background:var(--btn-bg-active);}
+.nav-link.active::after{content:'';position:absolute;bottom:5px;left:50%;transform:translateX(-50%);
+width:18px;height:3px;border-radius:3px;background:var(--hover-border);}
+.nav-spacer{flex:1;}
+.search-box{position:relative;width:min(340px,38vw);}
+.search-inner{display:flex;align-items:center;gap:10px;background:var(--surface);
+border:1px solid var(--border);border-radius:var(--radius-pill);padding:0 16px;height:44px;transition:var(--t-fast);}
+.search-inner:focus-within{border-color:var(--hover-border);background:var(--surface-2);box-shadow:0 0 0 4px rgba(124,92,255,.1);}
+.search-inner i{color:var(--text-3);font-size:15px;}
+.search-inner input{flex:1;background:none;border:none;outline:none;color:var(--text);font-size:14.5px;}
+.search-inner input::placeholder{color:var(--text-3);}
+.search-drop{position:absolute;top:54px;left:0;right:0;background:rgba(14,14,22,.97);
+backdrop-filter:blur(24px);border:1px solid var(--border-2);border-radius:var(--radius);
+padding:8px;box-shadow:var(--shadow);max-height:60vh;overflow-y:auto;display:none;}
+.search-drop.open{display:block;animation:drop .22s ease;}
+@keyframes drop{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:translateY(0);}}
+.sd-item{display:flex;gap:12px;padding:9px 10px;border-radius:var(--radius-sm);cursor:pointer;transition:var(--t-fast);align-items:center;}
+.sd-item:hover{background:var(--hover-bg);color:var(--hover-text);}
+.sd-item img{width:40px;height:58px;object-fit:cover;border-radius:7px;flex-shrink:0;background:var(--bg-3);}
+.sd-meta b{display:block;font-size:14px;font-weight:600;}
+.sd-meta span{font-size:12px;color:var(--text-3);}
+.icon-btn{width:44px;height:44px;border-radius:50%;background:var(--surface);border:1px solid var(--border);
+display:grid;place-items:center;font-size:16px;color:var(--text-2);transition:var(--t-fast);flex-shrink:0;}
+.icon-btn:hover{color:var(--hover-text);background:var(--hover-bg);border-color:var(--hover-border);box-shadow:var(--hover-shadow);transform:translateY(-1px);}
+.nav-search-toggle{display:none;}
+/* ============ HERO ============ */
+.hero{position:relative;height:min(78vh,640px);margin-top:-70px;overflow:hidden;}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;}
+.hero-slide.active{opacity:1;}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center 18%;
+transform:scale(1.08);animation:kb 12s ease forwards;}
+.hero-slide.active .hero-bg{animation:kb 12s ease forwards;}
+@keyframes kb{from{transform:scale(1.14);}to{transform:scale(1);}}
+.hero-veil{position:absolute;inset:0;background:
+linear-gradient(90deg,rgba(8,8,12,.95) 0%,rgba(8,8,12,.55) 45%,transparent 75%),
+linear-gradient(0deg,var(--bg) 2%,transparent 55%);}
+.hero-body{position:relative;height:100%;display:flex;align-items:flex-end;padding-bottom:64px;z-index:2;}
+.hero-content{max-width:600px;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--grad-soft);
+border:1px solid var(--border-2);backdrop-filter:blur(8px);
+padding:6px 14px;border-radius:var(--radius-pill);font-size:12.5px;font-weight:600;
+letter-spacing:.04em;text-transform:uppercase;margin-bottom:18px;}
+.hero-badge i{color:var(--accent-2);}
+.hero-title{font-size:clamp(34px,5.5vw,64px);font-weight:800;line-height:1.02;margin-bottom:16px;
+text-shadow:0 4px 30px rgba(0,0,0,.6);}
+.hero-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px;font-size:14.5px;color:var(--text-2);font-weight:500;}
+.rating-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,194,75,.14);
+color:var(--gold);padding:4px 12px;border-radius:var(--radius-pill);font-weight:700;}
+.hero-desc{font-size:16px;color:var(--text-2);margin-bottom:28px;display:-webkit-box;
+-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;max-width:520px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-dots{position:absolute;bottom:30px;right:clamp(16px,4vw,40px);display:flex;gap:9px;z-index:3;}
+.hero-dot{width:9px;height:9px;border-radius:50%;background:var(--surface-3);cursor:pointer;transition:var(--t-fast);}
+.hero-dot.active{width:30px;border-radius:6px;background:var(--btn-bg-active);}
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:var(--radius-pill);
+font-weight:700;font-size:15px;transition:var(--t-fast);white-space:nowrap;border:1px solid var(--btn-border);}
+.btn-primary{background:var(--watch-bg);border-color:var(--watch-border);color:var(--watch-text);box-shadow:none;}
+.btn-primary:hover{background:var(--watch-hover);border-color:var(--watch-border);color:var(--watch-text);box-shadow:var(--watch-shadow);transform:translateY(-1px);}
+.btn-glass{background:var(--btn-bg);color:var(--text-2);border:1px solid var(--btn-border);backdrop-filter:blur(10px);}
+.btn-glass:hover{background:var(--hover-bg);border-color:var(--hover-border);color:var(--hover-text);box-shadow:var(--hover-shadow);transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:var(--text-2);border:1px solid var(--border);}
+.btn-ghost:hover{color:var(--hover-text);background:rgba(124,92,255,.08);border-color:var(--hover-border);}
+.btn-icon-circle{width:48px;height:48px;padding:0;justify-content:center;border-radius:50%;}
+/* ============ SECTIONS ============ */
+.section{margin:46px 0;}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;gap:16px;}
+.section-title{display:flex;align-items:center;gap:12px;font-family:'Sora';font-size:clamp(19px,2.4vw,25px);font-weight:700;}
+.section-title .ic{width:38px;height:38px;border-radius:11px;background:var(--grad-soft);
+display:grid;place-items:center;font-size:16px;color:var(--accent-2);border:1px solid var(--border);}
+.see-all{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--text-2);
+padding:8px 14px;border-radius:var(--radius-pill);transition:var(--t-fast);}
+.see-all:hover{color:var(--hover-text);background:var(--hover-bg);gap:11px;box-shadow:var(--hover-shadow);}
+/* ============ OTT STRIP ============ */
+.ott{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none;}
+.ott::-webkit-scrollbar{display:none;}
+.ott-chip{display:flex;align-items:center;gap:9px;flex-shrink:0;padding:10px 18px;border-radius:var(--radius-pill);
+background:var(--surface);border:1px solid var(--border);font-weight:600;font-size:14px;color:var(--text-2);
+transition:var(--t-fast);cursor:pointer;}
+.ott-chip:hover{background:var(--hover-bg);border-color:var(--hover-border);color:var(--hover-text);box-shadow:var(--hover-shadow);transform:translateY(-1px);}
+.ott-chip.active{background:var(--btn-bg-active);color:var(--text);border-color:var(--hover-border);box-shadow:none;}
+.ott-chip img{height:18px;width:auto;}
+/* ============ ROWS ============ */
+.row-scroll{display:flex;gap:16px;overflow-x:auto;padding:6px 4px 18px;scroll-snap-type:x proximity;scrollbar-width:none;}
+.row-scroll::-webkit-scrollbar{display:none;}
+.row-scroll .card{flex:0 0 auto;width:clamp(150px,22vw,196px);scroll-snap-align:start;}
+/* ============ CARD ============ */
+.card{cursor:pointer;transition:var(--t);position:relative;}
+.card-poster{position:relative;aspect-ratio:2/3;border-radius:var(--radius);overflow:hidden;
+background:var(--bg-3);border:1px solid var(--border);box-shadow:0 8px 24px -10px rgba(0,0,0,.6);transition:var(--t);}
+.card-poster img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.card:hover .card-poster{border-color:var(--hover-border);box-shadow:0 20px 48px -24px rgba(124,92,255,.55),var(--shadow);transform:translateY(-6px);}
+.card:hover .card-poster img{transform:scale(1.08);}
+.card-rate{position:absolute;top:10px;left:10px;display:flex;align-items:center;gap:5px;
+background:rgba(8,8,12,.78);backdrop-filter:blur(8px);color:var(--gold);
+padding:4px 9px;border-radius:var(--radius-pill);font-size:12.5px;font-weight:700;z-index:2;}
+.card-type{position:absolute;top:10px;right:10px;background:var(--grad);color:#fff;
+padding:3px 9px;border-radius:6px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;z-index:2;}
+.card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,12,.95) 0%,transparent 55%);
+opacity:0;transition:var(--t);display:flex;flex-direction:column;justify-content:flex-end;padding:14px;}
+.card:hover .card-overlay{opacity:1;}
+.card-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.7);
+width:54px;height:54px;border-radius:50%;background:var(--btn-bg-active);border:1px solid var(--btn-border);display:grid;place-items:center;
+font-size:18px;color:var(--text);opacity:0;transition:var(--t);box-shadow:0 10px 28px -16px rgba(0,0,0,.9);}
+.card:hover .card-play{opacity:1;transform:translate(-50%,-50%) scale(1);}
+.card-ov-title{font-size:13.5px;font-weight:700;line-height:1.3;margin-bottom:4px;
+display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.card-ov-sub{font-size:11.5px;color:var(--text-2);}
+.card-title{margin-top:11px;font-size:14px;font-weight:600;line-height:1.35;
+display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;}
+.card-sub{font-size:12.5px;color:var(--text-3);margin-top:2px;}
+/* ============ FEATURE BANNER ============ */
+.feature{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:240px;
+display:flex;align-items:center;cursor:pointer;border:1px solid var(--border);margin:46px 0;}
+.feature-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s ease;}
+.feature:hover .feature-bg{transform:scale(1.05);}
+.feature-veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,12,.96),rgba(8,8,12,.4) 70%),var(--grad-soft);}
+.feature-body{position:relative;padding:clamp(26px,5vw,52px);max-width:600px;z-index:2;}
+.feature-label{display:inline-flex;align-items:center;gap:8px;color:var(--accent-2);font-weight:700;
+font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+.feature h2{font-size:clamp(26px,4vw,40px);margin-bottom:10px;}
+.feature p{color:var(--text-2);margin-bottom:22px;font-size:15.5px;}
+/* ============ STATS ============ */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);
+border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin:46px 0;}
+.stat{background:var(--bg-2);padding:26px 18px;text-align:center;transition:var(--t-fast);}
+.stat:hover{background:var(--bg-3);}
+.stat-num{font-family:'Sora';font-size:clamp(22px,3vw,32px);font-weight:800;
+background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.stat-label{font-size:13px;color:var(--text-3);margin-top:4px;font-weight:500;}
+/* ============ BROWSE / GRID ============ */
+.browse-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;}
+.view-title{font-family:'Sora';font-size:clamp(22px,3vw,30px);font-weight:700;display:flex;align-items:center;gap:12px;}
+.chips{display:flex;gap:10px;flex-wrap:wrap;}
+.chip{padding:9px 16px;border-radius:var(--radius-pill);background:var(--surface);border:1px solid var(--border);
+font-weight:600;font-size:13.5px;color:var(--text-2);cursor:pointer;transition:var(--t-fast);display:flex;align-items:center;gap:7px;}
+.chip:hover{background:var(--hover-bg);border-color:var(--hover-border);color:var(--hover-text);box-shadow:var(--hover-shadow);}
+.chip.active{background:var(--btn-bg-active);color:var(--text);border-color:var(--hover-border);}
+.toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:24px;}
+.toolbar-left{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.select{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-pill);
+padding:10px 16px;color:var(--text);font-weight:600;font-size:13.5px;cursor:pointer;outline:none;}
+.select:hover{background:var(--surface-2);border-color:var(--hover-border);}
+.select:focus{border-color:var(--hover-border);box-shadow:0 0 0 4px rgba(124,92,255,.1);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:clamp(14px,2vw,22px);}
+.load-area{text-align:center;margin:40px 0;}
+/* Skeleton */
+.skel{background:var(--bg-3);border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:2/3;}
+.skel::after{content:'';position:absolute;inset:0;transform:translateX(-100%);
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);animation:shimmer 1.4s infinite;}
+@keyframes shimmer{100%{transform:translateX(100%);}}
+/* ============ DETAIL MODAL ============ */
+.veil{position:fixed;inset:0;z-index:1000;background:rgba(4,4,8,.82);backdrop-filter:blur(10px);
+opacity:0;pointer-events:none;transition:var(--t);overflow-y:auto;padding:40px 16px;}
+.veil.open{opacity:1;pointer-events:auto;}
+.tv-browser body.modal-tv-open{overflow-y:auto !important;height:auto !important;position:static !important;}
+.tv-browser .veil{display:none;opacity:1;pointer-events:auto;transition:none;width:100%;min-height:100vh;height:auto;overflow:visible;-webkit-overflow-scrolling:auto;}
+.tv-browser .veil.open{display:block;}
+.tv-browser body.modal-tv-open .veil{position:absolute;inset:auto;top:0;left:0;right:0;padding:24px 16px 80px;}
+.modal-x{position:fixed;top:22px;right:24px;z-index:1010;width:46px;height:46px;border-radius:50%;
+background:rgba(20,20,30,.8);backdrop-filter:blur(10px);border:1px solid var(--border-2);
+display:grid;place-items:center;font-size:18px;color:var(--text);transition:var(--t-fast);}
+.modal-x:hover{background:var(--hover-bg);border-color:var(--hover-border);box-shadow:var(--hover-shadow);transform:rotate(90deg);}
+.modal{max-width:1080px;margin:0 auto;background:var(--bg-2);border:1px solid var(--border);
+border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);
+transform:scale(.96) translateY(20px);transition:var(--t);}
+.veil.open .modal{transform:scale(1) translateY(0);}
+.tv-browser .modal{transform:none !important;transition:none;max-width:calc(100vw - 48px);margin:24px auto;}
+.tv-browser .modal:focus,.tv-browser .modal-x:focus,.tv-browser .card:focus,.tv-browser .sd-item:focus,.tv-browser .tab:focus,.tv-browser .btn:focus{outline:3px solid var(--hover-border);outline-offset:3px;}
+.modal-hero{position:relative;}
+.modal-backdrop{position:relative;aspect-ratio:16/7;background-size:cover;background-position:center 20%;}
+.modal-backdrop-veil{position:absolute;inset:0;background:linear-gradient(0deg,var(--bg-2) 1%,transparent 60%),linear-gradient(90deg,rgba(14,14,22,.7),transparent 60%);}
+
+.player-frame{
+position:relative;
+aspect-ratio:16/9;
+background:#000;
+display:none;}
+
+.player-frame iframe{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+border:0;
+} 
+
+@supports not (aspect-ratio:16/9){
+.modal-backdrop{height:420px;}
+.player-frame{height:560px;}
+}
+.modal-body{padding:clamp(20px,3vw,36px);margin-top:-90px;position:relative;z-index:2;}
+.modal.player-on .modal-body{margin-top:0;}
+.modal.player-on .modal-poster{margin-top:0;}
+.tv-browser .modal-body{margin-top:-70px;}
+.tv-browser .modal.player-on .modal-body{margin-top:0;}
+.modal-top{display:flex;gap:28px;flex-wrap:wrap;}
+.modal-poster{width:180px;flex-shrink:0;aspect-ratio:2/3;border-radius:var(--radius);object-fit:cover;
+border:1px solid var(--border-2);box-shadow:var(--shadow);background:var(--bg-3);}
+.modal-info{flex:1;min-width:260px;}
+.modal-title{font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.05;margin-bottom:14px;}
+.modal-meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:16px;font-size:14px;color:var(--text-2);font-weight:500;}
+.modal-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--text-3);}
+.genre-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.genre-tag{padding:5px 13px;border-radius:var(--radius-pill);background:var(--surface);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);}
+.modal-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px;}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--border);margin:26px 0 20px;overflow-x:auto;scrollbar-width:none;}
+.tabs::-webkit-scrollbar{display:none;}
+.tab{padding:12px 18px;font-weight:600;font-size:14.5px;color:var(--text-3);position:relative;white-space:nowrap;transition:var(--t-fast);}
+.tab:hover{color:var(--hover-text);background:rgba(124,92,255,.08);border-radius:var(--radius-sm) var(--radius-sm) 0 0;}
+.tab.active{color:var(--text);}
+.tab.active::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:3px;border-radius:3px 3px 0 0;background:var(--hover-border);}
+.pane{display:none;animation:fade .3s ease;}
+.pane.active{display:block;}
+@keyframes fade{from{opacity:0;}to{opacity:1;}}
+.pane p.overview{color:var(--text-2);font-size:15.5px;line-height:1.75;}
+.people{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none;}
+.people::-webkit-scrollbar{display:none;}
+.person{flex:0 0 auto;width:110px;text-align:center;}
+.person img{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 8px;border:2px solid var(--border-2);background:var(--bg-3);}
+.person b{display:block;font-size:13px;font-weight:600;}
+.person span{font-size:11.5px;color:var(--text-3);}
+.wtw-grid{display:flex;flex-wrap:wrap;gap:12px;}
+.wtw-chip{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);
+border-radius:var(--radius-pill);padding:8px 16px 8px 8px;font-weight:600;font-size:13.5px;}
+.wtw-chip img{width:34px;height:34px;border-radius:9px;object-fit:cover;}
+.watch-now-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+padding:16px;margin-bottom:18px;}
+.watch-now-head{display:flex;align-items:center;gap:9px;font-weight:800;margin-bottom:12px;}
+.watch-now-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.watch-now-link{display:inline-flex;align-items:center;gap:8px;background:var(--bg-3);border:1px solid var(--border);
+border-radius:var(--radius-pill);padding:10px 14px;color:var(--text);font-size:13px;font-weight:700;transition:var(--t-fast);}
+.watch-now-link:hover{background:var(--hover-bg);border-color:var(--hover-border);color:var(--hover-text);box-shadow:var(--hover-shadow);transform:translateY(-1px);}
+.watch-now-link.primary{background:var(--watch-bg);border-color:var(--watch-border);color:var(--watch-text);}
+.watch-now-link.primary:hover{background:var(--watch-hover);border-color:var(--watch-border);color:var(--watch-text);box-shadow:var(--watch-shadow);}
+.watch-now-copy{color:var(--text-3);font-size:13px;line-height:1.6;margin-top:12px;}
+.episode-panel{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);}
+.episode-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;margin-bottom:12px;}
+.episode-title{font-size:13.5px;font-weight:800;display:flex;align-items:center;gap:8px;}
+.season-select{background:var(--bg-3);border:1px solid var(--border);border-radius:var(--radius-pill);
+color:var(--text);font-size:13px;font-weight:700;padding:8px 12px;outline:none;}
+.episode-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;max-height:230px;overflow:auto;padding-right:4px;}
+.episode-btn{background:var(--bg-3);border:1px solid var(--border);border-radius:var(--radius-sm);
+color:var(--text-2);padding:10px;text-align:left;font-size:12.5px;font-weight:700;transition:var(--t-fast);}
+.episode-btn:hover,.episode-btn.active{border-color:var(--hover-border);background:var(--hover-bg);color:var(--hover-text);box-shadow:var(--hover-shadow);}
+.episode-btn span{display:block;color:var(--text-3);font-size:11px;font-weight:600;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.episode-loading{color:var(--text-3);font-size:13px;}
+.wtw-note,.empty{color:var(--text-3);font-size:13.5px;margin-top:14px;display:flex;align-items:center;gap:8px;}
+.empty{justify-content:center;padding:30px;}
+/* ============ LIVE TV ============ */
+.live-tv-view{padding-bottom:20px;}
+.live-stage{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;align-items:start;}
+.live-player-card{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-lg);
+overflow:hidden;box-shadow:var(--shadow);}
+.live-player-top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;
+border-bottom:1px solid var(--border);background:rgba(255,255,255,.025);}
+.live-now{display:flex;align-items:center;gap:10px;font-weight:800;}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#ff3b5f;box-shadow:0 0 0 0 rgba(255,59,95,.75);animation:livePulse 1.4s infinite;}
+@keyframes livePulse{70%{box-shadow:0 0 0 8px rgba(255,59,95,0);}100%{box-shadow:0 0 0 0 rgba(255,59,95,0);}}
+.live-channel-meta{color:var(--text-3);font-size:12.5px;font-weight:700;white-space:nowrap;}
+.live-frame{position:relative;aspect-ratio:16/9;background:#000;}
+.live-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.live-link-panel{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;
+padding:28px;background:linear-gradient(135deg,rgba(14,14,22,.96),rgba(23,20,35,.94));}
+.live-link-panel.active{display:flex;}
+.live-link-box{max-width:460px;}
+.live-link-box i{font-size:34px;color:var(--accent-2);margin-bottom:14px;}
+.live-link-box h3{font-size:24px;margin-bottom:8px;}
+.live-link-box p{color:var(--text-3);font-size:14px;line-height:1.6;margin-bottom:18px;}
+.live-channel-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px;}
+.live-panel-title{display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:800;margin-bottom:12px;}
+.live-panel-title span{color:var(--text-3);font-size:12px;font-weight:700;}
+.live-channel-list{display:grid;gap:10px;}
+.live-channel{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;align-items:center;width:100%;
+min-height:68px;padding:12px 68px 12px 12px;border-radius:var(--radius);background:var(--bg-3);
+border:1px solid var(--border);color:var(--text);text-align:left;transition:var(--t-fast);position:relative;}
+.live-channel:hover{background:var(--hover-bg);border-color:var(--hover-border);box-shadow:var(--hover-shadow);transform:translateY(-1px);}
+.live-channel.active{background:var(--btn-bg-active);border-color:var(--hover-border);}
+.live-channel-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.06);color:var(--accent-2);}
+.live-channel-text{display:block;min-width:0;overflow:hidden;}
+.live-channel-name{display:block;font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.live-channel-sub{display:block;font-size:12px;color:var(--text-3);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.live-chip{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:10px;font-weight:900;letter-spacing:.08em;color:#fff;background:#ff3b5f;border-radius:var(--radius-pill);padding:4px 8px;}
+.live-note{margin-top:14px;color:var(--text-3);font-size:12.5px;line-height:1.6;}
+/* ============ FOOTER ============ */
+.footer{margin-top:70px;border-top:1px solid var(--border);background:var(--bg-2);padding:48px 0 110px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px;}
+.footer-brand p{color:var(--text-3);font-size:14px;margin-top:14px;max-width:340px;line-height:1.7;}
+.footer-col h4{font-family:'Sora';font-size:15px;margin-bottom:14px;}
+.footer-col a{display:block;color:var(--text-3);font-size:14px;padding:5px 0;transition:var(--t-fast);}
+.footer-col a:hover{color:var(--hover-text);transform:translateX(3px);}
+.foot-link{cursor:pointer;}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;flex-wrap:wrap;
+justify-content:space-between;gap:14px;align-items:center;color:var(--text-3);font-size:13px;}
+.tmdb-credit{display:flex;align-items:center;gap:9px;font-size:12.5px;}
+.tmdb-credit img{height:16px;}
+/* ============ AD SECTIONS ============ */
+.ad-zone{margin:34px auto;text-align:center;min-height:0;}
+.ad-zone .widget{margin:0 auto;}
+.ad-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-3);margin-bottom:6px;display:block;}
+/* ============ MOBILE BOTTOM NAV ============ */
+.bnav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:850;
+background:rgba(8,8,12,.9);backdrop-filter:blur(22px);border-top:1px solid var(--border);
+padding:8px 6px calc(8px + env(safe-area-inset-bottom));}
+.bnav-inner{display:flex;justify-content:space-around;}
+.bnav-btn{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;
+color:var(--text-3);padding:6px 4px;border-radius:var(--radius-sm);transition:var(--t-fast);flex:1;min-width:0;}
+.bnav-btn i{font-size:18px;}
+.bnav-btn:hover{color:var(--hover-text);background:var(--hover-bg);}
+.bnav-btn.active{color:var(--text);background:var(--surface);}
+/* ============ MISC ============ */
+.hidden{display:none !important;}
+.spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--surface-3);
+border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.center-load{display:flex;justify-content:center;padding:40px;}
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+.footer-grid{grid-template-columns:1fr 1fr;}
+.footer-brand{grid-column:1/-1;}
+.live-stage{grid-template-columns:1fr;}
+}
+/* ============ TV or MOBILE Device Size ============ */
+@media(max-width:1024px){ 
+.footer-grid{grid-template-columns:1fr 1fr;} 
+.footer-brand{grid-column:1/-1;} 
+.live-stage{grid-template-columns:1fr;} } 
+
+@media(max-width:768px){ 
+.nav-links{display:none;} 
+.search-box{display:none;} 
+.search-box.mobile-on{display:block;position:fixed;top:70px;left:0;right:0;width:auto;
+padding:12px 16px;background:rgba(8,8,12,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:799;}
+.nav-search-toggle{display:grid;}
+.hero{height:min(70vh,560px);}
+.stats{grid-template-columns:repeat(2,1fr);}
+.bnav{display:block;}
+.footer{padding-bottom:90px;}
+.modal-body{margin-top:-60px;}
+.modal.player-on .modal-body{margin-top:0;}
+.modal-poster{width:120px;}
+.veil{padding:0;}
+.modal{border-radius:0;min-height:100vh;}
+}
+@media(max-width:480px){
+.footer-grid{grid-template-columns:1fr;}
+.row-scroll .card{width:140px;}
+.grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));}
+.hero-actions .btn{flex:1;justify-content:center;}
+}
+
+/* ============ Row Scroll ============ */
+.row-scroll{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+    scrollbar-color:#797979 #000000;
+    cursor:grab;
+    user-select:none;
+    padding-bottom:12px;
+}
+
+.row-scroll:active{
+    cursor:grabbing;
+}
+
+.row-scroll::-webkit-scrollbar{
+    height:6px;
+}
+
+.row-scroll::-webkit-scrollbar-track{
+    background:#797979;
+    border-radius:20px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb{
+    background:#797979;
+    border-radius:20px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb:hover{
+    background:#797979;
+}
+
+.row-scroll>*{
+    flex:0 0 auto;
+}	
+
+/* ============ LIVE TV Channel View ============ */
+
+  <<style>
+
+   body { background: #121212; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+
+    /* Player Size */
+    #myPlayer { width: 100%; height: 450px; background: #000; margin-top: 40px; aspect-ratio: 16 / 9; border-radius: 12px;  }
+	
+	
+    /* Grid Layout */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 18px; width: 100%; padding: 20px 0; }
+    
+	
+    /* Button Style */
+    .channel-btn { background: #1e1e1e; border: 1px solid #333; color: white; padding: 10px; cursor: pointer; text-align: center; border-radius: 8px; }
+    .channel-btn img { width: 50px; height: 50px; display: block; margin: 0 auto 5px; }
+  </style>
+
+
+</style>
+
+
+<!-- Forhad Google adsense -->
+<!--
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=847261708778445689&amp;zx=4a7d776b-db11-498c-88e1-3348cc81b38e' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=847261708778445689&amp;zx=4a7d776b-db11-498c-88e1-3348cc81b38e' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7724599007189976&host=ca-host-pub-1556223355139109" crossorigin="anonymous"></script>
+-->
+<!-- data-ad-client=ca-pub-7724599007189976 -->
+
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div id='progress'></div>
+<!-- TOAST -->
+<div id='toast'><i class='fas fa-check-circle'></i><span id='toast-text'>Done</span></div>
+<!-- ============================================================ NAVBAR ============================================================ -->
+<header class='nav' id='nav'>
+<div class='nav-inner'>
+<div class='wrap' style='display:flex;align-items:center;gap:18px;width:100%;'>
+<!-- Hidden Blogger Header widget (required for Layout tab) -->
+<div class='hidden section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Sonarbangla Dev Hub
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+<div class='logo' id='logo'>
+<div class="logo-mark">
+    <img src="https://github.com/sharifbinmostafa/website-movie-tmdb/blob/main/Final-Anira-Logo.png?raw=true" alt="Sonarbangla Logo">
+</div><span>Anira Film</span>
+</div>
+
+<nav class='nav-links'>
+<button class='nav-link active' data-view='home'>Home</button>
+<button class='nav-link' data-view='movie'>Movies</button>
+<button class='nav-link' data-view='tv'>TV Shows</button>
+<button class='nav-link' data-view='livetv'><i class='fas fa-broadcast-tower'></i> Live TV</button>
+<button class='nav-link' data-view='mylist'><i class='fas fa-bookmark'></i> My List</button>
+</nav>
+<div class='nav-spacer'></div>
+<div class='search-box' id='search-box'>
+<div class='search-inner'>
+<i class='fas fa-search'></i>
+<input autocomplete='off' id='search-input' placeholder='Search movies & shows...' type='text'/>
+</div>
+<div class='search-drop' id='search-drop'></div>
+</div>
+<button class='icon-btn nav-search-toggle' id='search-toggle'><i class='fas fa-search'></i></button>
+<button class='icon-btn' id='theme-info' title='About'><i class='fas fa-circle-info'></i></button>
+</div>
+</div>
+</header>
+
+<!-- ============================================================ HERO ============================================================ -->
+<section class='hero' id='hero'>
+<div id='hero-slides'></div>
+<div class='hero-body'>
+<div class='wrap'>
+<div class='hero-content' id='hero-content'></div>
+</div>
+</div>
+<div class='hero-dots' id='hero-dots'></div>
+</section>
+<main class='wrap' id='app'>
+<!-- AD: TOP -->
+<div class='ad-zone'>
+<div class='no-items section' id='ads-top'></div>
+</div>
+<!-- ============ HOME VIEW ============ -->
+<div id='home-view'>
+<!-- OTT platforms -->
+<div class='section'>
+<div class='ott' id='ott-strip'></div>
+</div>
+
+	
+
+<!-- My Google adsense -->	
+	
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8731643222216552"
+     crossorigin="anonymous"></script>
+
+
+	
+<!-- ============ FIFA WORLD CUP 26 ============ -->
+<head>
+    <title>Media Player</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<script>
+function playMedia() {
+
+    // Backend source URL
+    const sourceUrl = "https://c1-nimble.mydex.tv/livetvabr/tsports-hd/playlist.m3u8";
+
+    const video = document.getElementById("video");
+
+    if (sourceUrl.endsWith(".m3u8")) {
+
+        if (Hls.isSupported()) {
+            const hls = new Hls();
+            hls.loadSource(sourceUrl);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                video.play();
+            });
+
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = sourceUrl;
+            video.play();
+        }
+
+    } else {
+
+        // MP4 or direct video URL
+        video.src = sourceUrl;
+        video.play();
+    }
+}
+</script>
+
+</head>
+<body>
+ <button class="btn btn-primary", onclick="playMedia()" id="play"><i class="fas fa-play-circle"></i>FIFA26</button>
+<br><br>
+<video id="video" width="400" controls></video>
+
+
+<!-- STATS -->
+<div class='stats'>
+<div class='stat'><div class='stat-num' id='stat-movies'>&#8212;</div><div class='stat-label'>Movies</div></div>
+<div class='stat'><div class='stat-num' id='stat-tv'>&#8212;</div><div class='stat-label'>TV Shows</div></div>
+<div class='stat'><div class='stat-num'><i class='fab fa-youtube' style='color:var(--accent-2)'></i></div><div class='stat-label'>Official Trailers</div></div>
+<div class='stat'><div class='stat-num'>TMDB</div><div class='stat-label'>Powered Data</div></div>
+</div>
+
+<!-- Recently viewed -->
+<div class='section hidden' id='recent-section'>
+<div class='section-head'>
+<div class='section-title'><span class='ic'><i class='fas fa-clock-rotate-left'></i></span> Recently Viewed</div>
+<button class='see-all' id='clear-recent'>Clear <i class='fas fa-trash-can'></i></button>
+</div>
+<div class='row-scroll' id='recent-row'></div>
+</div>
+<div id='home-rows'></div>
+<!-- Feature banner -->
+<div class='feature' id='feature-banner'>
+<div class='feature-bg' id='feature-bg'></div>
+<div class='feature-veil'></div>
+<div class='feature-body'>
+<div class='feature-label'><i class='fas fa-fire'></i> Featured Collection</div>
+<h2>Action & Thriller</h2>
+<p>Edge-of-your-seat picks &#8212; explore the most thrilling movies and shows.</p>
+<button class='btn btn-primary'><i class='fas fa-arrow-right'></i> Explore Now</button>
+</div>
+</div>
+<!-- AD: MIDDLE -->
+<div class='ad-zone'>
+<div class='no-items section' id='ads-middle'></div>
+</div>
+<div id='home-rows-2'></div>
+</div>
+<!-- ============ BROWSE VIEW ============ -->
+<div class='hidden' id='browse-view'>
+<div class='browse-head'>
+<div class='view-title' id='browse-title'><i class='fas fa-fire'></i> Trending</div>
+<div class='chips' id='type-chips'>
+<div class='chip active' data-type='movie'><i class='fas fa-film'></i> Movies</div>
+<div class='chip' data-type='tv'><i class='fas fa-tv'></i> TV Shows</div>
+</div>
+</div>
+<div class='toolbar'>
+<div class='toolbar-left' id='genre-chips'></div>
+<div class='toolbar-left'>
+<select class='select' id='sort-select'>
+<option value='popularity.desc'>Most Popular</option>
+<option value='vote_average.desc'>Top Rated</option>
+<option value='primary_release_date.desc'>Newest</option>
+<option value='revenue.desc'>Highest Grossing</option>
+</select>
+<select class='select' id='lang-select'>
+<option value=''>All Languages</option>
+<option value='en'>English</option>
+<option value='bn'>Bengali</option>
+<option value='hi'>Hindi</option>
+<option value="ta" >Tamil</option>
+<option value="te" >Telugu</option>
+<option value="ar" >Arabic</option>
+<option value="fr" >French</option>
+<option value='ko'>Korean</option>
+<option value='ja'>Japanese</option>
+<option value='es'>Spanish</option>
+<option value="ru" >Russian</option>
+<!-- 
+<option value="ur" >Urdu</option>
+<option value="la" >Latin</option>
+<option value="heb" >Hebrew</option>
+<option value="per" >Persian</option>
+<option value="tur" >Turkish</option> 
+-->
+</select>
+</div>
+</div>
+<div class='grid' id='grid'></div>
+<div class='load-area' id='load-area'>
+<button class='btn btn-glass' id='load-more'><i class='fas fa-circle-down'></i> Load More</button>
+</div>
+</div>
+<!-- ============ MY LIST VIEW ============ -->
+<div class='hidden' id='mylist-view'>
+<div class='browse-head'>
+<div class='view-title'><i class='fas fa-bookmark'></i> My List</div>
+</div>
+<div class='grid' id='mylist-grid'></div>
+<div class='empty hidden' id='mylist-empty'><i class='fas fa-bookmark'></i> Your list is empty. Tap the bookmark on any title to save it here.</div>
+</div>
+
+
+<!-- ============ LIVE TV VIEW ============ -->
+<div class='hidden live-tv-view' id='livetv-view'>
+<div class='browse-head'>
+<div>
+<div class='view-title'><i class='fas fa-satellite-dish'></i> Live TV</div>
+<p class='watch-now-copy' style='margin-top:8px;'>Browse configured live channels and play them inside the site.</p>
+</div>
+</div>
+
+
+<!-- ============ LIVE TV Channel View ============ -->
+
+<video id="myPlayer" controls autoplay></video>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<div class="grid" id="buttonContainer"></div>
+      <span class="close" onclick="closePlayer()">
+        <i class="fa fa-times"></i>
+    </span>
+<div
+    <video
+        id="video"
+        controls
+        autoplay
+        playsinline
+        webkit-playsinline>
+    </video>
+
+</div>
+
+    
+
+<!--============ -->
+
+
+<div class='live-stage'>
+<section class='live-player-card'>
+<div class='live-player-top'>
+<div class='live-now'><span class='live-dot'></span><span id='live-current-name'>Select a channel</span></div>
+<div class='live-channel-meta' id='live-current-meta'>Ready</div>
+</div>
+<div class='live-frame'>
+<iframe allow='fullscreen; autoplay; encrypted-media; picture-in-picture' allowfullscreen='true' id='live-tv-player' referrerpolicy='origin' scrolling='no' src=''></iframe>
+<div class='live-link-panel' id='live-link-panel'>
+<div class='live-link-box'>
+<i class='fas fa-up-right-from-square'></i>
+<h3 id='live-link-title'>Official Stream</h3>
+<p id='live-link-copy'>This provider opens on its official website.</p>
+<a class='btn btn-primary' href='#' id='live-link-open' rel='noopener' target='_blank'><i class='fas fa-arrow-up-right-from-square'></i> Open Official Site</a>
+</div>
+</div>
+</div>
+</section>
+<aside class='live-channel-panel'>
+<div class='live-panel-title'>Channels <span id='live-channel-count'>0</span></div>
+<div class='live-channel-list' id='live-channel-list'></div>
+<p class='live-note'>Use channels you are allowed to embed. You can add or remove channels from <b>CFG.LIVE_TV_CHANNELS</b>.</p>
+</aside>
+</div>
+</div>
+<!-- AD: BOTTOM -->
+<div class='ad-zone'>
+<div class='no-items section' id='ads-bottom'></div>
+</div>
+<!-- BLOGGER WIDGET AREA -->
+<div class='main section' id='main-widget-area'>
+<div class='widget Blog' data-version='1' id='Blog1'>
+</div>
+</div>
+</main>
+<!-- ============================================================ DETAIL MODAL ============================================================ -->
+<div aria-hidden='true' class='veil' id='veil'>
+<button class='modal-x' id='modal-x'><i class='fas fa-times'></i></button>
+<div aria-modal='true' class='modal' role='dialog' tabindex='-1'>
+<div class='modal-hero'>
+<div class='player-frame' id='player-frame'></div>
+<div class='modal-backdrop' id='modal-backdrop'>
+<div class='modal-backdrop-veil'></div>
+</div>
+</div>
+<div class='modal-body'>
+<div class='modal-top'>
+<img alt='Poster' class='modal-poster' id='modal-poster' src=''/>
+<div class='modal-info'>
+<h1 class='modal-title' id='modal-title'>Title</h1>
+<div class='modal-meta' id='modal-meta'></div>
+<div class='genre-tags' id='modal-genres'></div>
+<div class='modal-actions' id='modal-actions'></div>
+</div>
+</div>
+<div class='tabs' id='tabs'>
+<button class='tab active' data-tab='overview'>Overview</button>
+<button class='tab' data-tab='watch'>Watch Now</button>
+<button class='tab' data-tab='cast'>Cast</button>
+<button class='tab' data-tab='similar'>Similar</button>
+</div>
+<div class='pane active' id='pane-overview'><p class='overview' id='overview-text'></p></div>
+<div class='pane' id='pane-cast'><div class='people' id='cast-list'></div></div>
+<div class='pane' id='pane-similar'><div class='row-scroll' id='similar-list'></div></div>
+<div class='pane' id='pane-watch'><div id='wtw'></div></div>
+</div>
+</div>
+</div>
+
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class='footer'>
+<div class='wrap'>
+<div class='footer-grid'>
+<div class='footer-brand'>
+<div class='logo'><div class='logo-mark'><i class='fas fa-clapperboard'></i></div><span>Power By: Sonarbangla Dev Hub</span></div>
+<p>A modern way to discover movies and TV shows &#8212; browse trending titles, watch official trailers, explore cast and ratings, and find where to stream legally.</p>
+</div>
+<div class='footer-col'>
+<h4>Browse</h4>
+<a class='foot-link' data-view='home'>Home</a>
+<a class='foot-link' data-view='movie'>Movies</a>
+<a class='foot-link' data-view='tv'>TV Shows</a>
+<a class='foot-link' data-view='livetv'>Live TV</a>
+<a class='foot-link' data-view='mylist'>My List</a>
+</div>
+<div class='footer-col'>
+<h4>Info</h4>
+<a href='/p/about.html'>About</a>
+<a href='/p/privacy-policy.html'>Privacy Policy</a>
+<a href='/p/contact.html'>Contact</a>
+<a href='/p/disclaimer.html'>Disclaimer</a>
+</div>
+</div>
+<div class='footer-bottom'>
+<span>&#169; <span id='year'></span>
+Sonarbangla Dev Hub. (Md. Sharif Bin Mostafa) All rights reserved.</span>
+<span class='tmdb-credit'>
+<i class='fas fa-database' style='color:var(--accent-3)'></i>
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </span>
+</div>
+</div>
+</footer>
+<!-- ============================================================ MOBILE BOTTOM NAV ============================================================ -->
+<nav class='bnav'>
+<div class='bnav-inner'>
+<button class='bnav-btn active' data-view='home'><i class='fas fa-house'></i><span>Home</span></button>
+<button class='bnav-btn' data-view='movie'><i class='fas fa-film'></i><span>Movies</span></button>
+<button class='bnav-btn' data-view='tv'><i class='fas fa-tv'></i><span>TV</span></button>
+<button class='bnav-btn' data-view='livetv'><i class='fas fa-satellite-dish'></i><span>Live</span></button>
+<button class='bnav-btn' data-view='mylist'><i class='fas fa-bookmark'></i><span>My List</span></button>
+<button class='bnav-btn' data-search='1'><i class='fas fa-search'></i><span>Search</span></button>
+</div>
+</nav>
+<!-- ============================================================ JAVASCRIPT ============================================================ -->
+<script type='text/javascript'>
+//<![CDATA[
+(function(){
+"use strict";
+
+
+/* ----------------✅ CONFIG ---------------- */
+var CFG = {
+  KEY:'e65d3d95be7d1f9a6e3c1e4dcc60cb57',
+  BASE:'https://api.themoviedb.org/3',
+  IMG:'https://image.tmdb.org/t/p/w500',
+  IMG_BIG:'https://image.tmdb.org/t/p/original',
+
+  /* ---------------- "BD", "US", "IN", "GB", "CA", "JP", "KR", ---------------- */
+  
+  REGION:'US',  
+
+  allowedCountriesList: [
+    'US','BD','IN','GB','CA','AU','NZ','FR','DE','IT','ES','PT',
+    'NL','BE','CH','SE','NO','DK','FI','PL','CZ','AT','IE','GR',
+    'TR','AE','SA','QA','KW','BH','OM','EG','ZA','NG','KE','JP',
+    'KR','CN','HK','TW','SG','MY','TH','VN','PH','ID','PK','LK',
+    'NP','BR','AR','CL','CO','MX','PE','VE','UY','EC'
+  ],
+
+  PLATFORMS:[
+    {id:'',name:'All',icon:'fa-layer-group'},
+    {id:'8',name:'Netflix'},
+	{id:'175',name:'Netflix Kids'},
+    {id:'9',name:'Amazon Prime Video'},
+    {id:'10',name:'Amazon Video'},
+    {id:'2100',name:'Amazon Prime Video with Ads'},	  
+    {id:'2',name:'Apple TV Store'},
+	{id:'123',name:'FXNow Movies'},
+	{id:'15',name:'Hulu'},
+    {id:'1825',name:'HBO Max Amazon Channel'},
+	{id:'1899',name:'HBO Max'},
+	{id:'633',name:'Paramount'},	
+	{id:'2303',name:'Paramount Plus Premium'},
+	{id:'2616',name:'Paramount Plus Essential'},
+	{id:'2427',name:'Passionflix'},
+    {id:'237',name:'SonyLIV'},
+    {id:'2285',name:'JustWatch TV'},
+    {id:'538',name:'Plex'},	  
+    {id:'3',name:'Google Play Movies'},
+	{id:'583',name:'MGM+ Amazon Channel'},
+    {id:'119',name:'Prime Video'},
+    {id:'386',name:'Peacock Premium'},
+	{id:'387',name:'Peacock Premium Plus'},
+    {id:'337',name:'Disney+'},
+	{id:'520',name:'Discovery +'},
+    {id:'257',name:'fuboTV'},
+    {id:'232',name:'ZEE5'},
+    {id:'289',name:'Cinemax Amazon Channel'},
+	{id:'2318',name:'Amebatv Amazon Channel'},
+	{id:'350',name:'Apple TV+'},
+	{id:'148',name:'ABC'},
+	{id:'2243',name:'Apple TV Amazon Channel'},
+	{id:'2378',name:'Dove Amazon Channel'},
+	{id:'2418',name:'Kartoon Channel Amazon Channel'},
+	{id:'2470',name:'Yipee Kids TV Amazon Channel'},
+    {id:'315',name:'hoichoi'},
+    {id:'122',name:'Hotstar'}
+  ],
+	
+  MOODS:[
+    {g:'',n:'All',e:'🎬'},
+	{g:'28',n:'Action',e:'💥'},
+	{g:'10752',n:'War',e:'⚔️'},
+	{g:'12',n:'Adventure',e:'🏔️'},
+	{g:'16',n:'Animation',e:'🎨'},
+	{g:'80',n:'Crime',e:'🚔'},
+	{g:'35',n:'Comedy',e:'😂'},
+	{g:'99',n:'Documentary',e:'📽️'},
+	{g:'18',n:'Drama',e:'🎭'},
+    {g:'10749',n:'Romance',e:'❤️'},
+	{g:'27',n:'Horror',e:'👻'},
+	{g:'878',n:'Science Fiction (Sci-Fi)',e:'🚀👽'},
+    {g:'53',n:'Thriller',e:'🔪'},
+    {g:'10751',n:'Family',e:'👨‍👩‍👧'},
+	{g:'14',n:'Fantasy',e:'🧙'},
+	{g:'36',n:'History',e:'🏛️'},
+	{g:'10402',n:'Music',e:'🎵'},
+	{g:'10770',n:'TV Movie',e:'📺'},
+	{g:'37',n:'Western',e:'🤠'},
+	{g:'9648',n:'Mystery',e:'🕵️'}
+  ],
+	
+  PLACEHOLDER:'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22750%22%3E%3Crect width=%22500%22 height=%22750%22 fill=%22%2313131e%22/%3E%3Ctext x=%22250%22 y=%22375%22 text-anchor=%22middle%22 font-size=%22120%22 fill=%22%232a2a3a%22%3E%3F%3C/text%3E%3C/svg%3E',
+  LEGAL_WATCH_LINKS:[
+    {name:'JustWatch Search',icon:'fa-magnifying-glass',url:'https://www.justwatch.com/in/search?q={query}'},
+    {name:'Internet Archive',icon:'fa-box-archive',url:'https://archive.org/search?query={query}&and%5B%5D=mediatype%3A%22movies%22'},
+    {name:'YouTube Official',icon:'fa-video',url:'https://www.youtube.com/results?search_query={query}%20official%20{type}'},
+  ],
+
+
+/* ----------------✅ VIDEO CUSTOM_PLAYERS ---------------- */
+
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://www.2embed.cc/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://www.2embed.cc/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://player.vidlove.cc/embed/movie/${id}?skin=netflix&color=5865f2&autoPlay=true`, tv:(id,season,episode)=>`https://player.vidlove.cc/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://embed.su/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://embed.su/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://streamimdb.ru/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://streamimdb.ru/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vaplayer.ru/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://vaplayer.ru/embed/tv/${id}/${season}/${episode}` } */
+/* { name:"Play", icon: 'fa-play', sandbox:false, movie:id=>`https://vidapi.ru/embed/movie?tmdb=${id}`, tv:(id,s,e)=>`https://vidapi.ru/embed/tv?tmdb=${id}&season=${s}&episode=${e}`} */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vidsrc.sbs/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://vidsrc.sbs/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://www.vidking.net/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://www.vidking.net/embed/tv/${id}/${season}/${episode}` } */
+/* { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vaplayer.ru/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://vaplayer.ru/embed/tv/${id}/${season}/${episode}` } */
+
+/* 
+if you want to add Auto Play & Next Episode Button & Episode Selector then just add  >>>  
+		 &autoPlay=true 
+		 &nextEpisode=true
+		 &episodeSelector=true
+*/
+	
+	CUSTOM_PLAYERS:[
+    /*
+      Add your own licensed embed players here.
+      URL placeholders: {tmdb_id}, {imdb_id}, {type}, {title}, {year}
+      Function format: movie:id=>`...${id}`, tv:(id,s,e)=>`...${id}&s=${s}&e=${e}`
+      Set sandbox:false only for licensed players that refuse sandboxed iframe playback.
+    */
+     
+    { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vidsrc.sbs/embed/movie/${id}?skin=netflix&color=5865f2`, tv:(id,season,episode)=>`https://vidsrc.sbs/embed/tv/${id}/${season}/${episode}` }
+
+],
+
+  LIVE_TV_CHANNELS:[
+
+    {name:'FOX Sports',meta:'Official World Cup broadcaster',icon:'fa-tv',type:'link',url:'https://www.fox.com/soccer/fifa-world-cup'},
+    {name:'Peacock',meta:'Telemundo Spanish coverage',icon:'fa-play',type:'link',url:'https://www.peacocktv.com/sports'}
+	
+  ]
+};
+
+
+/* ---------------- STATE ---------------- */
+var S = {
+  view:'home', type:'movie', genre:'', lang:'', sort:'popularity.desc',
+  query:'', page:1, isSearch:false, loading:false, totalPages:1,
+  activeId:null, activeType:null,
+  watchlist:JSON.parse(localStorage.getItem('cv_watchlist')||'[]'),
+  recent:JSON.parse(localStorage.getItem('cv_recent')||'[]'),
+  genreMap:{}
+};
+
+/* ---------------- DOM HELPERS ---------------- */
+function $(s,ctx){return (ctx||document).querySelector(s);}
+function $all(s,ctx){return Array.prototype.slice.call((ctx||document).querySelectorAll(s));}
+function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+/* ---------------- UTILS ---------------- */
+var U = {
+  year:function(d){return d?String(d).slice(0,4):'—';},
+  runtime:function(m){if(!m)return '';var h=Math.floor(m/60),mm=m%60;return (h?h+'h ':'')+(mm?mm+'m':'');},
+  rate:function(v){return v?v.toFixed(1):'NR';},
+  poster:function(p){return p?CFG.IMG+p:CFG.PLACEHOLDER;},
+  backdrop:function(p){return p?CFG.IMG_BIG+p:'';},
+  toast:function(msg,type){
+    var t=$('#toast');t.className='show '+(type||'success');
+    $('#toast-text').textContent=msg;
+    $('#toast i').className='fas '+({success:'fa-check-circle',error:'fa-exclamation-circle',info:'fa-circle-info'}[type||'success']);
+    clearTimeout(U._tt);U._tt=setTimeout(function(){t.className='';},2600);
+  },
+  progress:function(on){
+    var p=$('#progress');
+    if(on){p.classList.add('on');p.style.width='35%';setTimeout(function(){if(p.classList.contains('on'))p.style.width='72%';},300);}
+    else{p.style.width='100%';setTimeout(function(){p.classList.remove('on');p.style.width='0';},350);}
+  },
+  debounce:function(fn,ms){var t;return function(){var a=arguments,c=this;clearTimeout(t);t=setTimeout(function(){fn.apply(c,a);},ms);};}
+};
+
+var Device = {
+  tv:false,
+  init:function(){
+    var ua=(navigator.userAgent||'').toLowerCase();
+    var largeMobileRoute=/[?&]m=1(?:&|$)/.test(location.search)&&Math.max(screen.width||0,window.innerWidth||0)>=960&&(navigator.maxTouchPoints||0)===0;
+    Device.tv=/android tv|googletv|google tv|bravia|sony|smart-tv|smarttv|hbbtv|netcast|tizen|web0s|webos|aftt|shield android tv/.test(ua)||largeMobileRoute;
+    if(Device.tv)document.documentElement.classList.add('tv-browser');
+  },
+  actionKey:function(e){
+    return e.key==='Enter'||e.key===' '||e.key==='Spacebar'||e.keyCode===13||e.keyCode===32||e.keyCode===23;
+  },
+  backKey:function(e){
+    return e.key==='Escape'||e.key==='Backspace'||e.key==='BrowserBack'||e.keyCode===27||e.keyCode===8||e.keyCode===4||e.keyCode===461||e.keyCode===10009;
+  },
+  scrollModalKey:function(e){
+    if(e.key==='ArrowDown'||e.key==='PageDown'||e.keyCode===40||e.keyCode===34||e.keyCode===20){window.scrollBy(0,360);return true;}
+    if(e.key==='ArrowUp'||e.key==='PageUp'||e.keyCode===38||e.keyCode===33||e.keyCode===19){window.scrollBy(0,-360);return true;}
+    return false;
+  }
+};
+
+/* ---------------- API (with cache) ---------------- */
+var API = {
+  mem:{},
+  fetch:function(path){
+    var url = CFG.BASE+path+(path.indexOf('?')>-1?'&':'?')+'api_key='+CFG.KEY;
+    if(API.mem[url]) return Promise.resolve(API.mem[url]);
+    try{var c=sessionStorage.getItem('cv:'+url);if(c){var j=JSON.parse(c);API.mem[url]=j;return Promise.resolve(j);}}catch(e){}
+    return fetch(url).then(function(r){return r.ok?r.json():null;}).then(function(d){
+      if(d){API.mem[url]=d;try{sessionStorage.setItem('cv:'+url,JSON.stringify(d));}catch(e){}}
+      return d;
+    }).catch(function(){return null;});
+  }
+};
+
+/* ---------------- CARD RENDER ---------------- */
+function cardHTML(item,type){
+  var t = type || item.media_type || (item.title?'movie':'tv');
+  var title = item.title||item.name||'Untitled';
+  var sub = U.year(item.release_date||item.first_air_date);
+  return '<div class="card" data-id="'+item.id+'" data-type="'+t+'" role="button" tabindex="0">'+
+    '<div class="card-poster">'+
+      '<img loading="lazy" src="'+U.poster(item.poster_path)+'" alt="'+esc(title)+'" onerror="this.src=\''+CFG.PLACEHOLDER+'\'"/>'+
+      '<span class="card-rate"><i class="fas fa-star"></i> '+U.rate(item.vote_average)+'</span>'+
+      '<span class="card-type">'+(t==='tv'?'TV':'Movie')+'</span>'+
+      '<div class="card-play"><i class="fas fa-play"></i></div>'+
+      '<div class="card-overlay"><div class="card-ov-title">'+esc(title)+'</div><div class="card-ov-sub">'+sub+'</div></div>'+
+    '</div>'+
+    '<div class="card-title">'+esc(title)+'</div>'+
+    '<div class="card-sub">'+sub+'</div>'+
+  '</div>';
+}
+function skeletons(n){var s='';for(var i=0;i<n;i++)s+='<div class="skel"></div>';return s;}
+
+/* ---------------- HERO ---------------- */
+var Hero = {
+  items:[], idx:0, timer:null,
+  load:function(){
+    API.fetch('/trending/all/week').then(function(d){
+      if(!d||!d.results)return;
+      Hero.items = d.results.filter(function(x){return x.backdrop_path && (x.media_type==='movie'||x.media_type==='tv');}).slice(0,6);
+      Hero.render();
+    });
+  },
+  render:function(){
+    var box=$('#hero-slides');box.innerHTML='';
+    var dots=$('#hero-dots');dots.innerHTML='';
+    Hero.items.forEach(function(it,i){
+      var s=el('div','hero-slide'+(i===0?' active':''));
+      s.innerHTML='<div class="hero-bg" style="background-image:url('+U.backdrop(it.backdrop_path)+')"></div><div class="hero-veil"></div>';
+      box.appendChild(s);
+      var d=el('div','hero-dot'+(i===0?' active':''));d.setAttribute('data-i',i);
+      d.addEventListener('click',function(){Hero.go(i);});
+      dots.appendChild(d);
+    });
+    Hero.show(0);
+    clearInterval(Hero.timer);
+    Hero.timer=setInterval(function(){Hero.go((Hero.idx+1)%Hero.items.length);},6500);
+  },
+  show:function(i){
+    var it=Hero.items[i];if(!it)return;
+    var type=it.media_type;
+    $('#hero-content').innerHTML=
+      '<div class="hero-badge"><i class="fas fa-bolt"></i> Trending '+(type==='tv'?'Series':'Movie')+'</div>'+
+      '<h1 class="hero-title">'+esc(it.title||it.name)+'</h1>'+
+      '<div class="hero-meta">'+
+        '<span class="rating-pill"><i class="fas fa-star"></i> '+U.rate(it.vote_average)+'</span>'+
+        '<span>'+U.year(it.release_date||it.first_air_date)+'</span>'+
+        '<span style="text-transform:uppercase">'+(type==='tv'?'TV Series':'Movie')+'</span>'+
+      '</div>'+
+      '<p class="hero-desc">'+esc(it.overview||'No description available.')+'</p>'+
+      '<div class="hero-actions">'+
+        '<button class="btn btn-primary" data-act="trailer" data-id="'+it.id+'" data-type="'+type+'"><i class="fas fa-play"></i> Watch Trailer</button>'+
+        '<button class="btn btn-glass" data-act="info" data-id="'+it.id+'" data-type="'+type+'"><i class="fas fa-circle-info"></i> More Info</button>'+
+      '</div>';
+  },
+  go:function(i){
+    var slides=$all('.hero-slide'),dots=$all('.hero-dot');
+    if(!slides[i])return;
+    slides.forEach(function(s){s.classList.remove('active');});
+    dots.forEach(function(d){d.classList.remove('active');});
+    slides[i].classList.add('active');dots[i].classList.add('active');
+    Hero.idx=i;Hero.show(i);
+  }
+};
+
+
+/* ---------------- HOME ROWS ---------------- */
+	
+var Rows = {
+  defs:[
+    {t:'Trending Now',i:'fa-fire',path:'/trending/all/day',type:null,box:1},
+    {t:'Popular Movies',i:'fa-film',path:'/movie/popular',type:'movie',box:1},
+    {t:'Top Rated',i:'fa-trophy',path:'/movie/top_rated',type:'movie',box:1},
+    {t:'Now Playing',i:'fa-clapperboard',path:'/movie/now_playing',type:'movie',box:1},
+    {t:'Popular TV Shows',i:'fa-tv',path:'/tv/popular',type:'tv',box:2},
+    {t:'Hindi Cinema',i:'fa-language',path:'/discover/movie?with_original_language=hi&sort_by=popularity.desc',type:'movie',box:2},
+    {t:'Hindi Web Series',i:'fa-tv',path:'/discover/tv?with_origin_country=IN&with_original_language=hi&sort_by=popularity.desc',type:'tv',box:2},
+    {t:'Bengali Films',i:'fa-clapperboard',path:'/discover/movie?with_original_language=bn&sort_by=popularity.desc',type:'movie',box:2},
+    {t:'Telugu Films',i:'fa-clapperboard',path:'/discover/movie?with_original_language=te&sort_by=popularity.desc',type:'movie',box:2},
+    {t:'Tamil Films',i:'fa-clapperboard',path:'/discover/movie?with_original_language=ta&sort_by=popularity.desc',type:'movie',box:2},
+    {t:'Spanish Films',i:'fa-clapperboard',path:'/discover/movie?with_original_language=es&sort_by=popularity.desc',type:'movie',box:2},
+    {t:'Korean Drama',i:'fa-earth-asia',path:'/discover/tv?with_original_language=ko&sort_by=popularity.desc',type:'tv',box:2}
+
+  ],
+  render:function(){
+    var b1=$('#home-rows'),b2=$('#home-rows-2');b1.innerHTML='';b2.innerHTML='';
+    Rows.defs.forEach(function(def){
+      var sec=el('div','section');
+      sec.innerHTML='<div class="section-head"><div class="section-title"><span class="ic"><i class="fas '+def.i+'"></i></span> '+def.t+'</div>'+
+        '<button class="see-all" data-seeall="'+esc(def.path)+'" data-title="'+esc(def.t)+'" data-type="'+(def.type||'movie')+'">See All <i class="fas fa-chevron-right"></i></button></div>'+
+        '<div class="row-scroll"><div style="display:flex;gap:16px">'+skeletons(8).replace(/skel/g,'skel" style="width:180px;flex:0 0 auto')+'</div></div>';
+      (def.box===1?b1:b2).appendChild(sec);
+      API.fetch(def.path).then(function(d){
+        var row=$('.row-scroll',sec);
+        if(!d||!d.results){row.innerHTML='<div class="empty">Could not load.</div>';return;}
+        row.innerHTML=d.results.filter(function(x){return x.poster_path;}).slice(0,16).map(function(x){return cardHTML(x,def.type);}).join('');
+      });
+    });
+  }
+};
+
+
+/* ---------------- OTT STRIP ---------------- */
+function renderOtt(){
+  var box=$('#ott-strip');
+  box.innerHTML=CFG.PLATFORMS.map(function(p,i){
+    return '<div class="ott-chip'+(i===0?' active':'')+'" data-prov="'+p.id+'">'+
+      (p.icon?'<i class="fas '+p.icon+'"></i> ':'')+esc(p.name)+'</div>';
+  }).join('');
+}
+
+/* ---------------- GENRE / MOOD CHIPS ---------------- */
+function renderGenreChips(){
+  $('#genre-chips').innerHTML=CFG.MOODS.map(function(m){
+    return '<div class="chip'+(m.g===S.genre?' active':'')+'" data-genre="'+m.g+'"><span>'+m.e+'</span> '+m.n+'</div>';
+  }).join('');
+}
+
+/* ---------------- BROWSE / GRID ---------------- */
+var Browse = {
+  url:function(){
+    if(S.isSearch){
+      return '/search/'+(S.type==='tv'?'tv':'movie')+'?query='+encodeURIComponent(S.query)+'&page='+S.page+'&include_adult=false';
+    }
+    var p='/discover/'+S.type+'?sort_by='+S.sort+'&page='+S.page+'&vote_count.gte=50&include_adult=false';
+    if(S.genre)p+='&with_genres='+S.genre;
+    if(S.lang)p+='&with_original_language='+S.lang;
+    return p;
+  },
+  load:function(reset){
+    if(S.loading)return;S.loading=true;
+    if(reset){S.page=1;$('#grid').innerHTML=skeletons(12);}
+    U.progress(true);
+    API.fetch(Browse.url()).then(function(d){
+      U.progress(false);S.loading=false;
+      var grid=$('#grid');
+      if(!d||!d.results){if(reset)grid.innerHTML='<div class="empty">Nothing found.</div>';return;}
+      S.totalPages=d.total_pages||1;
+      var html=d.results.filter(function(x){return x.poster_path;}).map(function(x){return cardHTML(x,S.type);}).join('');
+      if(reset)grid.innerHTML=html||'<div class="empty">No results.</div>';
+      else grid.insertAdjacentHTML('beforeend',html);
+      $('#load-area').style.display=(S.page<S.totalPages)?'block':'none';
+    });
+  },
+  more:function(){if(S.page<S.totalPages){S.page++;Browse.load(false);}}
+};
+
+/* ---------------- SEARCH ---------------- */
+var Search = {
+  drop:function(q){
+    var box=$('#search-drop');
+    if(!q||q.length<2){box.classList.remove('open');return;}
+    API.fetch('/search/multi?query='+encodeURIComponent(q)+'&include_adult=false').then(function(d){
+      if(!d||!d.results){box.classList.remove('open');return;}
+      var items=d.results.filter(function(x){return (x.media_type==='movie'||x.media_type==='tv')&&x.poster_path;}).slice(0,6);
+      if(!items.length){box.classList.remove('open');return;}
+      box.innerHTML=items.map(function(x){
+        return '<div class="sd-item" data-id="'+x.id+'" data-type="'+x.media_type+'" role="button" tabindex="0">'+
+          '<img src="'+U.poster(x.poster_path)+'" alt=""/>'+
+          '<div class="sd-meta"><b>'+esc(x.title||x.name)+'</b><span>'+(x.media_type==='tv'?'TV Show':'Movie')+' • '+U.year(x.release_date||x.first_air_date)+'</span></div>'+
+        '</div>';
+      }).join('');
+      box.classList.add('open');
+    });
+  },
+  run:function(q){
+    S.query=q;S.isSearch=true;S.genre='';S.lang='';
+    $('#search-drop').classList.remove('open');
+    App.show('browse');
+    $('#browse-title').innerHTML='<i class="fas fa-search"></i> Results for "'+esc(q)+'"';
+    Browse.load(true);
+  }
+};
+
+/* ---------------- DETAIL MODAL ---------------- */
+var Detail = {
+  open:function(id,type){
+    S.activeId=id;S.activeType=type;
+    U.progress(true);
+    Detail.reset();
+    Detail.lastFocus=document.activeElement;
+    $('#veil').classList.add('open');$('#veil').setAttribute('aria-hidden','false');
+    if(Device.tv){document.body.classList.add('modal-tv-open');document.documentElement.style.overflowY='auto';document.body.style.overflowY='auto';setTimeout(function(){window.scrollTo(0,0);},0);}
+    else document.body.style.overflow='hidden';
+    setTimeout(function(){var x=$('#modal-x'),m=$('.modal');if(Device.tv&&m)m.focus();else if(x)x.focus();},30);
+    API.fetch('/'+type+'/'+id+'?append_to_response=credits,similar,videos,watch/providers,external_ids').then(function(d){
+      U.progress(false);
+      if(!d){U.toast('Could not load details','error');return;}
+      Detail.fill(d,type);
+    });
+  },
+  reset:function(){
+    $('#player-frame').style.display='none';$('#player-frame').innerHTML='';
+    $('#modal-backdrop').style.display='block';
+    var modal=$('.modal');if(modal)modal.classList.remove('player-on');
+    Detail.tvSeasons=[];Detail.episodesLoading=false;Detail.watchProviders=null;
+    $('#overview-text').textContent='';$('#cast-list').innerHTML='';$('#similar-list').innerHTML='';$('#wtw').innerHTML='';
+    $all('.tab').forEach(function(t){t.classList.remove('active');});$all('.pane').forEach(function(p){p.classList.remove('active');});
+    $('.tab[data-tab="overview"]').classList.add('active');$('#pane-overview').classList.add('active');
+    $('#veil').scrollTop=0;
+  },
+  fill:function(d,type){
+    var title=d.title||d.name;
+    Detail.current={
+      tmdb_id:d.id,
+      imdb_id:d.imdb_id||(d.external_ids&&d.external_ids.imdb_id)||'',
+      title:title,
+      type:type,
+      year:U.year(d.release_date||d.first_air_date),
+      season:1,
+      episode:1
+    };
+    $('#modal-backdrop').style.backgroundImage='url('+U.backdrop(d.backdrop_path||d.poster_path)+')';
+    $('#modal-poster').src=U.poster(d.poster_path);
+    $('#modal-title').textContent=title;
+    var meta=[];
+    meta.push(U.year(d.release_date||d.first_air_date));
+    if(type==='movie'&&d.runtime)meta.push(U.runtime(d.runtime));
+    if(type==='tv'&&d.number_of_seasons)meta.push(d.number_of_seasons+' Season'+(d.number_of_seasons!==1?'s':''));
+    $('#modal-meta').innerHTML='<span class="rating-pill"><i class="fas fa-star"></i> '+U.rate(d.vote_average)+'</span>'+
+      meta.map(function(m){return '<span>'+esc(m)+'</span>';}).join('<span class="dot"></span>');
+    $('#modal-genres').innerHTML=(d.genres||[]).slice(0,5).map(function(g){return '<span class="genre-tag">'+esc(g.name)+'</span>';}).join('');
+    $('#overview-text').textContent=d.overview||'No overview available.';
+
+    // trailer
+    var vids=(d.videos&&d.videos.results)||[];
+    var trailer=vids.filter(function(v){return v.site==='YouTube'&&v.type==='Trailer';})[0]||
+                vids.filter(function(v){return v.site==='YouTube'&&v.type==='Teaser';})[0]||
+                vids.filter(function(v){return v.site==='YouTube';})[0];
+    Detail.trailerKey=trailer?trailer.key:null;
+
+var inList = S.watchlist.some(function(w){ return w.id === d.id; });
+
+$('#modal-actions').innerHTML =
+
+  // ✅ NEW: Play Button
+  '<button class="btn btn-primary" id="play"><i class="fas fa-play-circle"></i>Play</button>' +
+ 
+  (Detail.trailerKey
+  // ✅ NEW: Watch Trailer
+    ? '<button class="btn btn-glass" id="play-trailer"><i class="fas fa-play"></i> Watch Trailer</button>'
+    : '<button class="btn btn-ghost" disabled><i class="fas fa-video-slash"></i> No Trailer</button>'
+  ) +
+
+  // ✅ NEW: Add to List
+  '<button class="btn btn-glass" id="toggle-list"><i class="fas ' +
+  (inList ? 'fa-check' : 'fa-bookmark') +
+  '"></i> ' +
+  (inList ? 'In My List' : 'Add to List') +
+  '</button>' +
+  // ✅ NEW: Share
+  '<button class="btn btn-glass btn-icon-circle" id="share-btn" title="Share"><i class="fas fa-share-nodes"></i></button>' +
+  // ✅ NEW: View on TMDB
+  '<a class="btn btn-glass btn-icon-circle" href="https://www.themoviedb.org/' +
+  type + '/' + d.id +
+  '" target="_blank" rel="noopener" title="View on TMDB"><i class="fas fa-up-right-from-square"></i></a>';    
+
+  // ✅ NEW: Play Button Connected Code
+  document.addEventListener("click", function(e){
+
+    if(e.target.closest("#play")){
+
+        var player = document.querySelector('[data-custom-player="0"]');
+        var trailer = document.querySelector('[data-watch-trailer]');
+
+        if(player){
+            player.click();
+        } else if(trailer){
+            trailer.click();
+        } else {
+            alert("No video available");
+        }
+
+    }
+});
+
+    // cast
+    var cast=(d.credits&&d.credits.cast)||[];
+    $('#cast-list').innerHTML=cast.length?cast.slice(0,16).map(function(c){
+      return '<div class="person"><img loading="lazy" src="'+(c.profile_path?CFG.IMG+c.profile_path:CFG.PLACEHOLDER)+'" alt=""/><b>'+esc(c.name)+'</b><span>'+esc(c.character||'')+'</span></div>';
+    }).join(''):'<div class="empty">No cast info.</div>';
+
+    // similar
+    var sim=((d.similar&&d.similar.results)||[]).filter(function(x){return x.poster_path;});
+    $('#similar-list').innerHTML=sim.length?sim.slice(0,14).map(function(x){return cardHTML(x,type);}).join(''):'<div class="empty">No similar titles.</div>';
+
+    // where to watch
+    Detail.watch(d['watch/providers']);
+    if(type==='tv')Detail.loadEpisodes(d);
+
+    // recently viewed
+    Recent.add({id:d.id,type:type,title:title,poster_path:d.poster_path});
+
+    // wire buttons
+    if(Detail.trailerKey){
+      $('#play-trailer').addEventListener('click',Detail.playTrailer);
+    }
+    $('#toggle-list').addEventListener('click',function(){
+      Watchlist.toggle({id:d.id,type:type,title:title,poster_path:d.poster_path,vote_average:d.vote_average,release_date:d.release_date,first_air_date:d.first_air_date});
+      var nowIn=S.watchlist.some(function(w){return w.id===d.id;});
+      this.innerHTML='<i class="fas '+(nowIn?'fa-check':'fa-bookmark')+'"></i> '+(nowIn?'In My List':'Add to List');
+    });
+    $('#share-btn').addEventListener('click',function(){
+      var url=location.origin+location.pathname+'#'+type+'/'+d.id;
+      if(navigator.share){navigator.share({title:title,url:url});}
+      else{navigator.clipboard&&navigator.clipboard.writeText(url);U.toast('Link copied','info');}
+    });
+  },
+  playTrailer:function(){
+    if(!Detail.trailerKey)return;
+    var pf=$('#player-frame');
+    pf.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+Detail.trailerKey+'?autoplay=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>';
+    pf.style.display='block';$('#modal-backdrop').style.display='none';
+    var modal=$('.modal');if(modal)modal.classList.add('player-on');
+  },
+  customPlayers:function(){
+    return (CFG.CUSTOM_PLAYERS||[]).filter(function(p){
+      return p&&p.enabled!==false&&(p.url||p.movie||p.tv);
+    });  
+
+},
+  customPlayerUrl:function(player){
+    var info=Detail.current||{};
+    var vals={
+      tmdb_id:info.tmdb_id||'',
+      imdb_id:info.imdb_id||'',
+      type:info.type||'movie',
+      title:info.title||'',
+      year:/^[0-9]{4}$/.test(info.year||'')?info.year:'',
+      season:info.season||1,
+      episode:info.episode||1
+    };
+    if(vals.type==='tv'&&typeof player.tv==='function'){
+      return player.tv(vals.tmdb_id,vals.season,vals.episode);
+    }
+    if(vals.type==='movie'&&typeof player.movie==='function'){
+      return player.movie(vals.tmdb_id);
+    }
+    return String(player.url||'').replace(/\{(tmdb_id|imdb_id|type|title|year)\}/g,function(_,key){
+      return encodeURIComponent(vals[key]);
+    });
+  },
+  playCustom:function(index){
+    var players=Detail.customPlayers();
+    var player=players[index];
+    if(!player)return;
+    var src=Detail.customPlayerUrl(player);
+    if(!src){U.toast('Player URL missing','error');return;}
+    var pf=$('#player-frame');
+    var sandboxAttr=player.sandbox===false?'':' sandbox="allow-scripts allow-same-origin allow-forms allow-presentation allow-pointer-lock"';
+    pf.innerHTML='<iframe src="'+esc(src)+'" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="origin"'+sandboxAttr+'></iframe>';
+    pf.style.display='block';$('#modal-backdrop').style.display='none';
+    var modal=$('.modal');if(modal)modal.classList.add('player-on');
+  },
+  loadEpisodes:function(d){
+    var seasons=(d.seasons||[]).filter(function(s){return s.season_number>0&&s.episode_count>0;});
+    if(!seasons.length)return;
+    Detail.episodesLoading=true;
+    Detail.tvSeasons=[];
+    Detail.watch(Detail.watchProviders);
+    Promise.all(seasons.map(function(s){
+      return API.fetch('/tv/'+d.id+'/season/'+s.season_number).then(function(sd){
+        return sd&&sd.episodes?sd:null;
+      });
+    })).then(function(list){
+      if(!Detail.current||Detail.current.tmdb_id!==d.id)return;
+      Detail.tvSeasons=list.filter(Boolean).sort(function(a,b){return a.season_number-b.season_number;});
+      Detail.episodesLoading=false;
+      if(Detail.tvSeasons.length){
+        Detail.current.season=Detail.tvSeasons[0].season_number;
+        var firstEp=(Detail.tvSeasons[0].episodes||[]).filter(function(e){return e.episode_number>0;})[0];
+        Detail.current.episode=firstEp?firstEp.episode_number:1;
+      }
+      Detail.watch(Detail.watchProviders);
+    }).catch(function(){
+      Detail.episodesLoading=false;
+      Detail.watch(Detail.watchProviders);
+    });
+  },
+  episodePanel:function(){
+    var info=Detail.current||{};
+    if(info.type!=='tv')return '';
+    if(Detail.episodesLoading){
+      return '<div class="episode-panel"><div class="episode-head"><div class="episode-title"><i class="fas fa-list-ol"></i> Episodes</div></div><div class="episode-loading">Loading complete episode list...</div></div>';
+    }
+    if(!Detail.tvSeasons||!Detail.tvSeasons.length){
+      return '<div class="episode-panel"><div class="episode-head"><div class="episode-title"><i class="fas fa-list-ol"></i> Episodes</div></div><div class="episode-loading">No episode list available.</div></div>';
+    }
+    var selectedSeason=info.season||Detail.tvSeasons[0].season_number;
+    var season=Detail.tvSeasons.filter(function(s){return s.season_number===selectedSeason;})[0]||Detail.tvSeasons[0];
+    var episodes=(season.episodes||[]).filter(function(e){return e.episode_number>0;});
+    var opts=Detail.tvSeasons.map(function(s){
+      return '<option value="'+s.season_number+'"'+(s.season_number===selectedSeason?' selected':'')+'>Season '+s.season_number+'</option>';
+    }).join('');
+    var buttons=episodes.map(function(e){
+      var active=e.episode_number===(info.episode||1);
+      return '<button class="episode-btn '+(active?'active':'')+'" data-season="'+season.season_number+'" data-episode="'+e.episode_number+'">E'+e.episode_number+'<span>'+esc(e.name||('Episode '+e.episode_number))+'</span></button>';
+    }).join('');
+    return '<div class="episode-panel">'+
+      '<div class="episode-head"><div class="episode-title"><i class="fas fa-list-ol"></i> Episodes</div><select class="season-select" id="season-select">'+opts+'</select></div>'+
+      '<div class="episode-list">'+buttons+'</div>'+
+    '</div>';
+  },
+  watchNow:function(region){
+    var info=Detail.current||{},title=info.title||'',type=info.type||'movie',year=info.year||'';
+    var query=encodeURIComponent((title+' '+(/^[0-9]{4}$/.test(year)?year:'')).trim());
+    var typeLabel=type==='tv'?'series':'movie';
+    var actions='';
+    var customPlayers=Detail.customPlayers();
+    actions+=customPlayers.map(function(p,i){
+      return '<button class="watch-now-link primary" data-custom-player="'+i+'"><i class="fas '+(p.icon||'fa-play')+'"></i> '+esc(p.name||('Player '+(i+1)))+'</button>';
+    }).join('');
+    if(Detail.trailerKey){
+      actions+='<button class="watch-now-link primary" data-watch-trailer><i class="fas fa-play"></i> Trailer Player</button>';
+    }
+    if(region&&region.link){
+      actions+='<a class="watch-now-link primary" href="'+esc(region.link)+'" target="_blank" rel="noopener"><i class="fas fa-tv"></i> Official Providers</a>';
+    }
+    actions+=CFG.LEGAL_WATCH_LINKS.map(function(p){
+      var url=p.url.replace('{query}',query).replace('{type}',encodeURIComponent(typeLabel));
+      return '<a class="watch-now-link" href="'+esc(url)+'" target="_blank" rel="noopener"><i class="fas '+p.icon+'"></i> '+esc(p.name)+'</a>';
+    }).join('');
+    return '<div class="watch-now-panel">'+
+      '<div class="watch-now-head"><i class="fas fa-circle-play"></i> Watch Now</div>'+
+      '<div class="watch-now-actions">'+actions+'</div>'+
+      Detail.episodePanel()+
+      '<div class="watch-now-copy"></div>'+
+    '</div>';
+  },
+  bindWatchNow:function(){
+    var btn=$('#wtw [data-watch-trailer]');
+    if(btn)btn.addEventListener('click',Detail.playTrailer);
+    var seasonSelect=$('#season-select');
+    if(seasonSelect)seasonSelect.addEventListener('change',function(){
+      var sn=parseInt(this.value,10)||1;
+      Detail.current.season=sn;
+      var season=(Detail.tvSeasons||[]).filter(function(s){return s.season_number===sn;})[0];
+      var firstEp=season&&season.episodes?season.episodes.filter(function(e){return e.episode_number>0;})[0]:null;
+      Detail.current.episode=firstEp?firstEp.episode_number:1;
+      Detail.watch(Detail.watchProviders);
+    });
+    $all('#wtw [data-episode]').forEach(function(b){
+      b.addEventListener('click',function(){
+        Detail.current.season=parseInt(this.getAttribute('data-season'),10)||1;
+        Detail.current.episode=parseInt(this.getAttribute('data-episode'),10)||1;
+        $all('#wtw [data-episode]').forEach(function(x){x.classList.remove('active');});
+        this.classList.add('active');
+      });
+    });
+    $all('#wtw [data-custom-player]').forEach(function(b){
+      b.addEventListener('click',function(){
+        Detail.playCustom(parseInt(this.getAttribute('data-custom-player'),10));
+      });
+    });
+  },
+  watch:function(wp){
+    var box=$('#wtw');
+    Detail.watchProviders=wp;
+    var res=wp&&wp.results;
+    if(!res){box.innerHTML=Detail.watchNow(null)+'<div class="empty"><i class="fas fa-tv"></i> No streaming info available.</div>';Detail.bindWatchNow();return;}
+    var region=res[CFG.REGION]||res['US']||res['GB']||res[Object.keys(res)[0]];
+    if(!region){box.innerHTML=Detail.watchNow(null)+'<div class="empty"><i class="fas fa-tv"></i> Not available to stream right now.</div>';Detail.bindWatchNow();return;}
+    var all=[].concat(region.flatrate||[],region.free||[],region.ads||[]);
+    var seen={},uniq=all.filter(function(p){if(seen[p.provider_id])return false;seen[p.provider_id]=1;return true;});
+    var link=region.link||'';
+    if(!uniq.length){box.innerHTML=Detail.watchNow(region)+'<div class="empty"><i class="fas fa-tv"></i> No subscription streaming found. Check rental/buy options on '+(link?'<a href="'+link+'" target="_blank" rel="noopener" style="color:var(--accent)">JustWatch</a>':'major platforms')+'.</div>';Detail.bindWatchNow();return;}
+    box.innerHTML=Detail.watchNow(region)+'<div class="wtw-grid">'+uniq.map(function(p){
+      return (link?'<a href="'+link+'" target="_blank" rel="noopener" class="wtw-chip">':'<div class="wtw-chip">')+
+        '<img src="'+CFG.IMG_BIG+p.logo_path+'" alt=""/><span>'+esc(p.provider_name)+'</span>'+(link?'</a>':'</div>');
+    }).join('')+'</div>'+
+    '<p class="wtw-note"><i class="fas fa-circle-info"></i> Streaming availability from TMDB / JustWatch. Varies by region &amp; subscription.</p>';
+    Detail.bindWatchNow();
+  },
+  close:function(){
+    $('#veil').classList.remove('open');$('#veil').setAttribute('aria-hidden','true');document.body.style.overflow='';
+    document.body.classList.remove('modal-tv-open');document.documentElement.style.overflowY='';document.body.style.overflowY='';
+    $('#player-frame').innerHTML='';$('#player-frame').style.display='none';
+    var modal=$('.modal');if(modal)modal.classList.remove('player-on');
+    if(Detail.lastFocus&&typeof Detail.lastFocus.focus==='function'){try{Detail.lastFocus.focus();}catch(e){}}
+  }
+};
+
+/* ---------------- WATCHLIST ---------------- */
+var Watchlist = {
+  save:function(){localStorage.setItem('cv_watchlist',JSON.stringify(S.watchlist));},
+  toggle:function(item){
+    var i=S.watchlist.findIndex(function(w){return w.id===item.id;});
+    if(i>-1){S.watchlist.splice(i,1);U.toast('Removed from My List','info');}
+    else{S.watchlist.unshift(item);U.toast('Added to My List');}
+    Watchlist.save();
+  },
+  render:function(){
+    var grid=$('#mylist-grid'),empty=$('#mylist-empty');
+    if(!S.watchlist.length){grid.innerHTML='';empty.classList.remove('hidden');return;}
+    empty.classList.add('hidden');
+    grid.innerHTML=S.watchlist.map(function(x){return cardHTML(x,x.type);}).join('');
+  }
+};
+
+/* ---------------- RECENTLY VIEWED ---------------- */
+var Recent = {
+  save:function(){localStorage.setItem('cv_recent',JSON.stringify(S.recent.slice(0,18)));},
+  add:function(item){
+    S.recent=S.recent.filter(function(r){return r.id!==item.id;});
+    S.recent.unshift(item);S.recent=S.recent.slice(0,18);Recent.save();Recent.render();
+  },
+  render:function(){
+    var sec=$('#recent-section'),row=$('#recent-row');
+    if(!S.recent.length){sec.classList.add('hidden');return;}
+    sec.classList.remove('hidden');
+    row.innerHTML=S.recent.map(function(x){return cardHTML(x,x.type);}).join('');
+  },
+  clear:function(){S.recent=[];Recent.save();Recent.render();U.toast('History cleared','info');}
+};
+
+/* ---------------- STATS ---------------- */
+function loadStats(){
+  API.fetch('/discover/movie?page=1').then(function(d){if(d)$('#stat-movies').textContent=fmt(d.total_results);});
+  API.fetch('/discover/tv?page=1').then(function(d){if(d)$('#stat-tv').textContent=fmt(d.total_results);});
+}
+function fmt(n){if(!n)return '—';if(n>=1000000)return (n/1000000).toFixed(1)+'M+';if(n>=1000)return Math.floor(n/1000)+'K+';return n;}
+
+/* ---------------- APP / ROUTING ---------------- */
+var App = {
+  show:function(view){
+    S.view=view;
+    $('#home-view').classList.toggle('hidden',view!=='home');
+    $('#browse-view').classList.toggle('hidden',view!=='browse');
+    $('#mylist-view').classList.toggle('hidden',view!=='mylist');
+    $('#livetv-view').classList.toggle('hidden',view!=='livetv');
+    $('#hero').style.display=(view==='home')?'block':'none';
+    if(view!=='livetv')LiveTV.stop();
+    // nav active states
+    var navKey=view==='browse'?S.type:view;
+    $all('.nav-link').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-view')===navKey);});
+    $all('.bnav-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-view')===navKey);});
+    window.scrollTo({top:0,behavior:'smooth'});
+  },
+  browse:function(type,title,icon){
+    S.type=type;S.isSearch=false;S.genre='';S.lang='';S.sort='popularity.desc';
+    App.show('browse');
+    $('#browse-title').innerHTML='<i class="fas '+(icon||'fa-fire')+'"></i> '+title;
+    $all('#type-chips .chip').forEach(function(c){c.classList.toggle('active',c.getAttribute('data-type')===type);});
+    $('#sort-select').value=S.sort;$('#lang-select').value='';
+    renderGenreChips();
+    Browse.load(true);
+  },
+  seeAll:function(path,title,type){
+    // discover-style see-all reuses browse with the row's filters where possible
+    S.type=type;S.isSearch=false;
+    App.show('browse');
+    $('#browse-title').innerHTML='<i class="fas fa-layer-group"></i> '+esc(title);
+    $all('#type-chips .chip').forEach(function(c){c.classList.toggle('active',c.getAttribute('data-type')===type);});
+    // parse lang/genre from path if present
+    S.genre='';S.lang='';S.sort='popularity.desc';
+    var lm=path.match(/with_original_language=(\w+)/);if(lm)S.lang=lm[1];
+    var gm=path.match(/with_genres=([\d,]+)/);if(gm)S.genre=gm[1].split(',')[0];
+    $('#lang-select').value=S.lang;$('#sort-select').value=S.sort;
+    renderGenreChips();
+    Browse.load(true);
+  },
+  home:function(){App.show('home');},
+  mylist:function(){App.show('mylist');Watchlist.render();},
+  livetv:function(){App.show('livetv');LiveTV.render();LiveTV.play(LiveTV.active);}
+};
+
+/* ---------------- LIVE TV ---------------- */
+var LiveTV = {
+  active:0,
+  rendered:false,
+  channels:function(){return CFG.LIVE_TV_CHANNELS||[];},
+  render:function(){
+    var list=$('#live-channel-list'),count=$('#live-channel-count');
+    if(!list)return;
+    var channels=LiveTV.channels();
+    if(count)count.textContent=channels.length+' live';
+    if(!channels.length){
+      list.innerHTML='<div class="empty"><i class="fas fa-satellite-dish"></i> No live channels configured.</div>';
+      return;
+    }
+    list.innerHTML=channels.map(function(ch,i){
+      return '<button class="live-channel '+(i===LiveTV.active?'active':'')+'" data-live-channel="'+i+'">'+
+        '<span class="live-channel-icon"><i class="fas '+(ch.icon||'fa-tv')+'"></i></span>'+
+        '<span class="live-channel-text"><span class="live-channel-name">'+esc(ch.name||('Channel '+(i+1)))+'</span><span class="live-channel-sub">'+esc(ch.meta||'Live stream')+'</span></span>'+
+        '<span class="live-chip">'+(ch.type==='link'?'LINK':'LIVE')+'</span>'+
+      '</button>';
+
+    }).join('');
+    LiveTV.rendered=true;
+  },
+  play:function(index){
+    var channels=LiveTV.channels();
+    if(!channels.length)return;
+    var idx=Math.max(0,Math.min(index||0,channels.length-1));
+    var ch=channels[idx];
+    LiveTV.active=idx;
+    var player=$('#live-tv-player'),panel=$('#live-link-panel'),link=$('#live-link-open');
+    if(ch.type==='link'){
+      if(player)player.src='';
+      if(panel)panel.classList.add('active');
+      $('#live-link-title').textContent=ch.name||'Official Stream';
+      $('#live-link-copy').textContent=ch.meta||'Open the official provider website to watch.';
+      if(link)link.href=ch.url;
+    }else{
+      if(panel)panel.classList.remove('active');
+      if(player&&player.src!==ch.url)player.src=ch.url;
+    }
+    $('#live-current-name').textContent=ch.name||('Channel '+(idx+1));
+    $('#live-current-meta').textContent=ch.meta||'Live stream';
+    $all('[data-live-channel]').forEach(function(btn){
+      btn.classList.toggle('active',parseInt(btn.getAttribute('data-live-channel'),10)===idx);
+    });
+  },
+  stop:function(){
+    var player=$('#live-tv-player');
+    if(player)player.src='';
+    var panel=$('#live-link-panel');if(panel)panel.classList.remove('active');
+  }
+};
+
+
+/* ---------------- LIVE TV Channel View ---------------- */
+
+// Your Data
+    const channels = [
+		
+		
+// Amr baby r Nana & Nani Request
+//	   { name: "Star Jalsha HD (30min Left)", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png", url: "https://catchup.yuppcdn.net/amazonv2/36/preview/starjalsha/master/chunklist.m3u8" },
+//	   { name: "Star Jalsha HD (30min Left)", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png", url: "https://yupptvcatchupire.yuppcdn.net/preview/starjalsha/1800.m3u8" },
+	   { name: "Star Jalsha HD", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png", url: "https://s3.itcnbd.live/server-6/stream/resource/aHR0cDovLzE3Mi4xNi4yMDAuMjA1OjgwODgvMzAyL3RyYWNrcy12MWExL21vbm8ubTN1OD90b2tlbj02NWY0MGNmZDEyNmEwZjQ2NjdiNTAxYWU0ZGQ0Mjg3NmJlMGE2ZGNiLWQ1YWNhNThjNDczNzU0ZWVkZWE1YzU3MTEyNjczMjRkLTE3ODU2OTAzMjYtMTc4NTY4NjcyNg" },
+//	   { name: "Star Jalsha HD (Test)", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png", url: "https://www.ftpbd.net/wp-content/hls-file/Kattalan-2026-HindiClean-Dubbed-1080p-HDTC_reencoded/index.m3u8" },		
+//     { name: "Zee Bangla", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-24-224919-69c2c413156ce-png", url: "https://stream.ottplus.bd/live/zee_bangla_abr/live/zee_bangla_720/chunks.m3u8" },
+       { name: "Zee Bangla", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-24-224919-69c2c413156ce-png", url: "https://c1-nimble.mydex.tv/livetvabr/zee-bangla/playlist.m3u8" },
+//     { name: "MTV (India)", logo: "https://images.squarespace-cdn.com/content/v1/5ea862a8804f7204dfbb35fb/1597949504339-NJQMPKC30YRARQIHUKLW/network_mtvindia.png", url: "http://149.71.34.166:8000/play/a00p/index.m3u8" },
+//     { name: "MTV (India)", logo: "https://images.squarespace-cdn.com/content/v1/5ea862a8804f7204dfbb35fb/1597949504339-NJQMPKC30YRARQIHUKLW/network_mtvindia.png", url: "http://103.72.101.252:8080/live/248.m3u8" },
+
+		
+// Bangladeshi
+	   { name: "TSports", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155134-69cb9caabdb45-png", url: "https://c1-nimble.mydex.tv/livetvabr/tsports-hd/playlist.m3u8" },
+	   { name: "BTV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145426-69cb8f4638b42-png", url: "https://c1-nimble.mydex.tv/livetvabr/btv-hd/playlist.m3u8" },
+	   { name: "BTV News HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145512-69cb8f74e46fe-png", url: "https://c1-nimble.mydex.tv/livetvabr/btv-news-hd/playlist.m3u8" },
+	   { name: "BTV Chattagram", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-165552-69d394bcd53fd-png", url: "https://c1-nimble.mydex.tv/livetvabr/btv-chattagram/playlist.m3u8" },
+//	   { name: "Sangsad TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145540-69cb8f9035301-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8" },
+	   { name: "Sangsad TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145540-69cb8f9035301-png", url: "https://c1-nimble.mydex.tv/livetvabr/sangsad-tv-hd/playlist.m3u8" },
+       { name: "Duranto TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155034-69cb9c6e1edc4-png", url: "https://c1-nimble.mydex.tv/livetvabr/duranto-tv-hd/playlist.m3u8" },
+//	   { name: "ATN News", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154208-69cb9a7405ef1-png", url: "https://c1-nimble.mydex.tv/livetvabr/atn-news/playlist.m3u8" },
+	   { name: "ATN News", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154208-69cb9a7405ef1-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8" },
+//	   { name: "ATN Bangla HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-165852-69d3957014cbd-png", url: "https://c1-nimble.mydex.tv/livetvabr/atn-bangla-hd/playlist.m3u8" },
+	   { name: "ATN Bangla HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-165852-69d3957014cbd-png", url: "https://c1-nimble.mydex.tv/livetvabr/atn-bangla-hd/playlist.m3u8" },
+//	   { name: "Somoy TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154253-69cb9aa177917-png", url: "https://c1-nimble.mydex.tv/livetvabr/somay-tv-hd/playlist.m3u8" },
+	   { name: "Somoy TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154253-69cb9aa177917-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8" },
+//	   { name: "Independent TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-163852-69d390c068351-png", url: "https://c1-nimble.mydex.tv/livetvabr/independent-tv/playlist.m3u8" },
+	   { name: "Independent TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-163852-69d390c068351-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8" },
+//	   { name: "Channel 24 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154602-69cb9b5e0e01f-png", url: "https://c1-nimble.mydex.tv/livetvabr/channel-24-hd/playlist.m3u8" },
+	   { name: "Channel 24 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154602-69cb9b5e0e01f-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8" },
+//	   { name: "Channel I HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145721-69cb8ff508ee8-png", url: "https://c1-nimble.mydex.tv/livetvabr/channel-i-hd/playlist.m3u8" },
+	   { name: "Channel I HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145721-69cb8ff508ee8-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8" },
+//     { name: "Ekattor TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154637-69cb9b81c920b-png", url: "https://c1-nimble.mydex.tv/livetvabr/ekattor-tv-hd/playlist.m3u8" },
+       { name: "Ekattor TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154637-69cb9b81c920b-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8" },
+//	   { name: "Ekushey TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-173712-69d39e6c334fc-png", url: "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8" },
+	   { name: "Ekushey TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-173712-69d39e6c334fc-png", url: "https://c1-nimble.mydex.tv/livetvabr/ekushey-tv/playlist.m3u8" },
+//	   { name: "Jamuna TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154730-69cb9bb63f2c0-png", url: "https://c1-nimble.mydex.tv/livetvabr/jamuna-tv/playlist.m3u8" },
+	   { name: "Jamuna TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154730-69cb9bb63f2c0-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8" },
+//     { name: "NTV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145757-69cb90198531b-png", url: "https://c1-nimble.mydex.tv/livetvabr/ntv-hd/playlist.m3u8" },
+       { name: "NTV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145757-69cb90198531b-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8" },
+//     { name: "DBC News HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154818-69cb9be6560e3-png", url: "https://c1-nimble.mydex.tv/livetvabr/dbc-news/playlist.m3u8" },
+	   { name: "DBC News HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154818-69cb9be6560e3-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8" },
+       { name: "RTV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-145934-69cb907a68b98-png", url: "https://c1-nimble.mydex.tv/livetvabr/rtv-hd/playlist.m3u8" },
+       { name: "Boishakhi TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-174040-69d39f3c0f581-png", url: "https://c1-nimble.mydex.tv/livetvabr/boishakhi-tv-hd/playlist.m3u8" },
+//     { name: "News 24 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154834-69cb9bf684e27-png", url: "https://c1-nimble.mydex.tv/livetvabr/news-24-hd/playlist.m3u8" },
+	   { name: "News 24 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154834-69cb9bf684e27-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8" },
+//     { name: "Bangla Vision", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-174427-69d3a01f7df66-png", url: "https://c1-nimble.mydex.tv/livetvabr/bangla-vision/playlist.m3u8" },
+       { name: "Bangla Vision", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-174427-69d3a01f7df66-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8" },
+	   { name: "NEXUS TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155155-69cb9cbfcd2c2-png", url: "https://c1-nimble.mydex.tv/livetvabr/nexus-tv-hd/playlist.m3u8" },
+//     { name: "Desh TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-175141-69d3a1d1f07b0-png", url: "https://c1-nimble.mydex.tv/livetvabr/desh-tv/playlist.m3u8" },
+       { name: "Desh TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-175141-69d3a1d1f07b0-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1724/output/1724-audio_113542_eng=113200-video=2226000.m3u8" },
+//     { name: "Ekhon TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155214-69cb9cd20b690-png", url: "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8?nimblesessionid=81683219" },
+       { name: "Ekhon TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155214-69cb9cd20b690-png", url: "https://c1-nimble.mydex.tv/livetvabr/ekhon-tv/playlist.m3u8" },
+//     { name: "Star News HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155312-69cb9d0c63a6d-png", url: "https://c1-nimble.mydex.tv/livetvabr/star-news-hd/playlist.m3u8" },
+	   { name: "Star News HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155312-69cb9d0c63a6d-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8" },	
+       { name: "My TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154145-69cb9a5d694c9-png", url: "https://c1-nimble.mydex.tv/livetvabr/my-tv-hd/playlist.m3u8" },
+       { name: "Mohona TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154226-69cb9a867f136-png", url: "https://c1-nimble.mydex.tv/livetvabr/mohona-tv/playlist.m3u8" },
+       { name: "Bijoy TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-162001-69cba35571004-png", url: "https://c1-nimble.mydex.tv/livetvabr/bijoy-tv-hd/playlist.m3u8" },
+//     { name: "Maasranga TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154345-69cb9ad56bbfa-png", url: "https://c1-nimble.mydex.tv/livetvabr/maasranga-tv-hd/playlist.m3u8" },
+       { name: "Maasranga TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154345-69cb9ad56bbfa-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8" },
+//     { name: "Channel 9 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154545-69cb9b4d580d4-png", url: "https://c1-nimble.mydex.tv/livetvabr/channel-9-hd/playlist.m3u8" },
+	   { name: "Channel 9 HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154545-69cb9b4d580d4-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8" },
+       { name: "Gtv HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154620-69cb9b7001651-png", url: "https://c1-nimble.mydex.tv/livetvabr/gtv-hd/playlist.m3u8" },
+       { name: "Asian TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154654-69cb9b9277de4-png", url: "https://c1-nimble.mydex.tv/livetvabr/asian-tv-hd/playlist.m3u8" },
+       { name: "SATV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154712-69cb9ba48814c-png", url: "https://c1-nimble.mydex.tv/livetvabr/satv-hd/playlist.m3u8" },
+//     { name: "Deepto TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154748-69cb9bc849a7b-png", url: "https://c1-nimble.mydex.tv/livetvabr/deepto-tv/playlist.m3u8" },
+//     { name: "Deepto TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154748-69cb9bc849a7b-png", url: "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8" },
+//     { name: "Deepto TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154748-69cb9bc849a7b-png", url: "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8" },
+	   { name: "Deepto TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-154748-69cb9bc849a7b-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8" },
+       { name: "Me TV", logo: "https://www.metvbd.com/media/common/logo.png", url: "https://iptvbd.live/metv1080/1080.m3u8" },
+       { name: "TBN 24", logo: "https://live.bdtype.com/upload/tv/TBN%2024%20Live.JPG", url: "http://cdn01.palki.tv/live/TBN24-M/index.m3u8" },
+//     { name: "Movie Bangla TV", logo: "https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png", url: "http://alvetv.com/moviebanglatv/8080/index.m3u8" },
+	   { name: "Movie Bangla TV", logo: "https://moviebangla.tv/wp-content/uploads/2024/06/moviebanglatv-logo-2.png", url: "https://iptv-proxy.trionine.workers.dev/http://alvetv.com/moviebanglatv/8080/index.m3u8" },
+       { name: "Bangla TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155018-69cb9c5e500ec-png", url: "https://c1-nimble.mydex.tv/livetvabr/bangla-tv-hd/playlist.m3u8" },
+       { name: "Nagorik TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155055-69cb9c83d13ca-png", url: "https://c1-nimble.mydex.tv/livetvabr/nagorik-tv-hd/playlist.m3u8" },
+       { name: "Ananda TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155110-69cb9c92a2a7d-png", url: "https://c1-nimble.mydex.tv/livetvabr/ananda-tv/playlist.m3u8" },
+       { name: "Global TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155234-69cb9ce637235-png", url: "https://c1-nimble.mydex.tv/livetvabr/global-tv-hd/playlist.m3u8" },
+       { name: "Green TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155252-69cb9cf8476a3-png", url: "https://c1-nimble.mydex.tv/livetvabr/green-tv-hd/playlist.m3u8" },
+//     { name: "Channel 1", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-05-13-091219-6a03ef97b4bf9-png", url: "https://c1-nimble.mydex.tv/livetvabr/channel-1/playlist.m3u8" },
+       { name: "Channel 1", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-05-13-091219-6a03ef97b4bf9-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8" },
+       { name: "Kushbo tv", logo: "https://upload.wikimedia.org/wikipedia/bn/c/c1/%E0%A6%96%E0%A7%81%E0%A6%B6%E0%A6%AC%E0%A7%81_%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE_%E0%A6%9F%E0%A7%87%E0%A6%B2%E0%A6%BF%E0%A6%AD%E0%A6%BF%E0%A6%B6%E0%A6%A8_%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.jpeg", url: "https://cdn-4.pishow.tv/live/1473/1473_2.m3u8" },
+       { name: "Deshi Tv", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJD_nCtyh73ql9kh7yn-mEXzb9qWAsivCkUO3iTzr0fluVlqBTaHRdqg&s=10", url: "https://deshitv.deshitv24.net/live/myStream/playlist.m3u8" },
+       { name: "Deshe Bideshe", logo: "https://i0.wp.com/www.bangladeshcircle.com/wp-content/uploads/2016/07/Weekly-Deshe-Bideshe-logo.jpg?ssl=1", url: "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8" },
+	   { name: "SRK TV", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1746005940155.png", url: "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8" },
+
+
+// Hindi
+//	   { name: "Sony Max2", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160212-69cb9f28ba8cf-png", url: "https://c1-nimble.mydex.tv/livetvabr/sony-max2/playlist.m3u8" },
+	   { name: "Sony Max2", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160212-69cb9f28ba8cf-png", url: "https://stream.ottplus.bd/live/sony_max_sd_abr/live/sony_max_sd_720/chunks.m3u8" },
+//     { name: "B4U Music", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155924-69cb9e806f3d7-png", url: "https://c1-nimble.mydex.tv/livetvabr/b4u-music/playlist.m3u8" },
+       { name: "B4U Music", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155924-69cb9e806f3d7-png", url: "https://mix.drmlive.net/mix/xiaomi-66225.m3u8" },
+	   { name: "B4U Kadak", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155859-69cb9e67130c3-png", url: "https://c1-nimble.mydex.tv/livetvabr/b4u-kadak/playlist.m3u8" },
+	   { name: "B4U MOVIES", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155912-69cb9e74340f4-png", url: "https://c1-nimble.mydex.tv/livetvabr/b4u-movies/playlist.m3u8" },
+       { name: "& Pictures", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155828-69cb9e48eb2cf-png", url: "https://c1-nimble.mydex.tv/livetvabr/and-pictures-hd/playlist.m3u8" },
+	   { name: "&TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-164525-69d39249c9d79-png", url: "https://c1-nimble.mydex.tv/livetvabr/andtv/playlist.m3u8" },
+	   { name: "Sony Sab", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160259-69cb9f5714888-png", url: "https://c1-nimble.mydex.tv/livetvabr/sony-sab/playlist.m3u8" },
+//	   { name: "Sony Yay", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-165208-69d393dc57779-png", url: "https://c1-nimble.mydex.tv/livetvabr/sony-yay/playlist.m3u8" },
+	   { name: "Sony Yay", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-165208-69d393dc57779-png", url: "https://stream.ottplus.bd/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8" },
+	   { name: "Sony Pix", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160501-69cb9fd154ce5-png", url: "https://c1-nimble.mydex.tv/livetvabr/sony-pix/playlist.m3u8" },
+	   { name: "Zee TV HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-164631-69d3928b5c17d-png", url: "https://c1-nimble.mydex.tv/livetvabr/zee-tv-hd/playlist.m3u8" },
+       { name: "The Movie Club", logo: "https://tvpdotcomdynamiclogopus.samsungcloud.tv/resize?url=https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260701T005102SQUARE.png&h=250", url: "https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8" },
+       { name: "The Movie Club 2", logo: "https://tvpdotcomdynamiclogopus.samsungcloud.tv/resize?url=https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260623T013422SQUARE.png&h=250", url: "https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf" },		
+	   { name: "Zee Cinema HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-04-06-164259-69d391b7a9664-png", url: "https://c1-nimble.mydex.tv/livetvabr/zee-cinema-hd/playlist.m3u8" },
+	   { name: "Zee Cafe", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160532-69cb9ff08a775-png", url: "https://c1-nimble.mydex.tv/livetvabr/zee-cafe/playlist.m3u8" },
+	   { name: "Balle Balle TV", logo: "https://static.wikia.nocookie.net/logopedia/images/a/af/Balle_Balle.jpeg", url: "https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.ts.m3u8" },
+       { name: "Hindi Hits HD", logo: "https://i.scdn.co/image/ab6761610000e5ebe0b4fc5ba9dc720ea2f3cc23", url: "http://146.59.253.52:8080/hindihitshd/index.m3u8" },
+       { name: "MK Six", logo: "https://static.wikia.nocookie.net/logopedia/images/b/b4/Mk_six.png", url: "https://cdn-3.pishow.tv/live/1253/master.m3u8" },
+       { name: "South Station", logo: "https://yt3.googleusercontent.com/wZNZDQmr2Zct4_ETjKLkrcTKuN81wYEK527pxhoun-hMXFDTVYQYXhCoYZG8TgOSBp0s_NC5uw=s900-c-k-c0x00ffffff-no-rj", url: "https://jmp2.uk/stvp-IN3800008CX" },
+       { name: "9xm HD", logo: "https://www.9xm.in/images/logo.png", url: "https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8" },
+       { name: "WION News", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/WION_news_Logo.svg/960px-WION_news_Logo.svg.png", url: "https://d7x8z4yuq42qn.cloudfront.net/index_1.m3u8" },
+       { name: "NDTV INDIA", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhQQR9snCIv0ChyftiGYtV_3lbMSWbq1n0VCiZ2FGqg&s=10", url: "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8" },
+       { name: "AAJ TAK HD", logo: "https://upload.wikimedia.org/wikipedia/commons/2/28/Aaj_tak_logo.png", url: "https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_720p/chunks.m3u8" },
+       { name: "ZEE NEWS", logo: "https://images.seeklogo.com/logo-png/63/1/zee-news-logo-png_seeklogo-630304.png", url: "https://dknttpxmr0dwf.cloudfront.net/index_2.m3u8" },
+//     { name: "ZOOM", logo: "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg", url: "https://pubads.g.doubleclick.net/ssai/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8" },
+	   { name: "ZOOM", logo: "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg", url: "https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8" },
+       { name: "Music India", logo: "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png", url: "https://cdn-2.pishow.tv/live/226/226_1.m3u8" },
+       { name: "BOLLYWOOD MOVIES", logo: "https://thumbs.dreamstime.com/b/bollywood-indian-cinema-film-banner-logo-sign-design-glowing-element-152283243.jpg", url: "https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991756" },
+       { name: "SHEEMAROO BOLLYWOOD", logo: "https://daex9l847wg3n.cloudfront.net/shemoutputimages/Shemaroo-Bollywood-Classic/5bebef3ca609d202b30000d9/large_16_9_1725445788.jpg", url: "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8" },
+       { name: "GREEN ENTERTAINMENT TV", logo: "https://images.seeklogo.com/logo-png/61/1/green-entertainment-tv-logo-png_seeklogo-616407.png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8" },
+
+
+// Kolkata
+       { name: "Zee Bangla Cinema", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-155752-69cb9e24d3e6c-png", url: "https://c1-nimble.mydex.tv/livetvabr/zee-bangla-cinema/playlist.m3u8" },
+       { name: "Enter 10 Bangla", logo: "https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/4c/Enterr10_Bangla_logo_%282020%29.png", url: "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_240p/chunks.m3u8" },
+       { name: "Bangla+ HD", logo: "https://static.wikia.nocookie.net/etv-gspn-bangla/images/9/9a/Bangla%2B_HD.png", url: "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8" },
+       { name: "News18 Bangla News", logo: "https://upload.wikimedia.org/wikipedia/commons/6/67/News18_Bangla_logo.jpeg", url: "https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg01448-samsungin-news18bangla-samsungin/playlist.m3u8" },
+       { name: "R Plus News (24x7)", logo: "https://play-lh.googleusercontent.com/16nt8vm_iqlZydIVjLGDyFR5AYJsO89bXZ2fyFqRcKEEMMMtR7rb6nLnMNaNavzd5b6aEN0pfzpRe0R4tdtjIw=w240-h480-rw", url: "https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8" },
+       { name: "Republic TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO2L1mJORBzEfmVKfNQgD_6CUeRaEoUZHVLTbmRdxYZgiSlFEC88h1KLi&s=10", url: "https://vg-republictvlive.akamaized.net/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-456368/06e5afc2-a022-4e51-9131-4e33a6207c5c/1.m3u8" },
+       { name: "TV9 Bangla", logo: "https://www.medianews4u.com/wp-content/uploads/2020/11/TV9-Network-forays-into-Bengal-with-the-launch-of-TV9-Bangla.jpg", url: "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8" },
+       { name: "Akash 8", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujcE4ba4gUBKeMZPXK7RuT0sOuYOzebVK7IUPBEB7lc_xH-VC3Yp2KZIb&s=10", url: "https://cdn-4.pishow.tv/live/969/969_1.m3u8" },
+
+
+		
+// International
+
+//     { name: "Aljazeera English HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-174128-69cbb66c9c1a0-png", url: "https://c1-nimble.mydex.tv/livetvabr/aljazeera-english-hd/playlist.m3u8" },
+//     { name: "Aljazeera English HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-174128-69cbb66c9c1a0-png", url: "https://live-hls-web-aje-fa.thehlive.com/AJE/index.m3u8" },
+       { name: "Aljazeera English HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-174128-69cbb66c9c1a0-png", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8" },
+	   { name: "CNN", logo: "https://i0.wp.com/www.downloadfonts.io/wp-content/uploads/2021/08/CNN-Logo-Font.png", url: "https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-cnnnow-samsungin/playlist.m3u8" },
+       { name: "CNN International", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9a/CNNinternational-logo.png", url: "https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8" },
+       { name: "CNN en Español Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/47f99fa1872d0b6c8d1c562b94bfeb31.webp", url: "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8" },
+       { name: "5-Minute Crafts Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/aade542208ceee1dd2c608fe42c0375c.webp", url: "https://amg02051-soulpublishing-amg02051c7-plex-us-306.playouts.now.amagi.tv/ts-us-e2-n1/playlist/amg02051-amg02051c7-306/cb573d1e786c64899cd43e6ecef74782967b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a8764cc59e0a957f39e8fc8b307b24455a9c5a43e6a64ed6abb64244dd6cbfb102488b2f57f3d446ca8515ba80dc4696468776ec159cc4f196da4686818c61ab52b66c5859242bca867ba1a337d6a8fa1359d6117a2624f287c98ed341268f4b4f5db7aa85ef25b724c787218e7724fb2eac0fd560c43bf14990e840f6f9e09f5a176ded847a7137ace0978ff91e3aa929aef1be93202ad9be3f5073e441946227319bf88b3381c01e99ff63a6bc7b1235c5de14cecdfcd3a1e0c31adc16cbc1f58a340d1b30534cd50be2bf69dc668c2df880436f0c0314dfef3faeb1d050346d5895c00f84617c97efcbd28f406bb02f7133c569da490a7fc332780e8c00f0992e639a290c914f53de5c328502b1f81bfca9dfea1128f7b9e347ec64fbba1ad89454fa8d5dd1e72d404a73bd0528ec2a35e77cc6194779f17046/63/960x540_2200000/index.m3u8" },
+//     { name: "DW English HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160444-69cb9fc03eded-png", url: "https://c1-nimble.mydex.tv/livetvabr/dw-english-hd/playlist.m3u8" },
+       { name: "DW English HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160444-69cb9fc03eded-png", url: "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8" },
+//     { name: "BBC Earth HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160242-69cb9f4663612-png", url: "https://c1-nimble.mydex.tv/livetvabr/bbc-earth-hd/playlist.m3u8" },
+       { name: "BBC Earth HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160242-69cb9f4663612-png", url: "https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist540p.m3u8" },
+       { name: "Outdoor Channel", logo: "https://images.squarespace-cdn.com/content/v1/55d34330e4b0a6ed8769d735/1515011347176-0M1ALG0T7C845275WID2/outdoor+channel.png", url: "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8" },
+       { name: "CGTN Documentary ", logo: "https://canvas.tamashaweb.com/jazzlive/uploads/channels/logo/1749124897580.webp?id=45", url: "https://english-livebkali.cgtn.com/live/doccgtn.m3u8" },
+       { name: "CGTN Русский ", logo: "https://nettv.live/uploads/18/1-1P5101F610514.jpg", url: "http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8" },
+       { name: "RUSSIA TODAY", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrvi13-Z0vntjwJDNyZGltbXlw8GIF9mjjEpv5wOAAj7lB7j4x4cP9Ug&s=10", url: "https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8" },
+       { name: "Russia1 HD +0", logo: "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0025/4223/brand.gif?itok=BjS_msXm", url: "https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8" },
+       { name: "ABC News Australia", logo: "https://img-284.media.info/i/bg/6/6058-1747114438.webp", url: "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8" },
+       { name: "Breaking News", logo: "https://media.istockphoto.com/id/1673064753/vector/breaking-news-world-map-background.jpg", url: "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg02703-leadstory-leadstory-samsungau/playlist.m3u8" },
+       { name: "CBS News", logo: "https://ropercenter.cornell.edu/sites/default/files/styles/600x/public/Images/CBS_News_logo8x6.png?itok=514qc5bB", url: "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8" },
+       { name: "NBC News NOW", logo: "https://pbs.twimg.com/profile_images/1776065140263157760/HwdTwNVp_400x400.jpg", url: "https://plex-xumoent-nbcnn-x17gi.fast.nbcuni.com/live/master.m3u8" },
+       { name: "NBC Sports Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/6cc41b88a015a34ab239fc5e2220ffdf.webp", url: "https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master_1.m3u8" },
+       { name: "CNA News", logo: "https://pbs.twimg.com/profile_images/1119289014719139840/pJBjLkG7_400x400.png", url: "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8" },
+       { name: "i24 NEWS Live (Israel)", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/24e260482394b19c07e6c368de70e71e.webp", url: "https://i24newsfrench-cdn.encoders.immergo.tv/1/streamPlaylist.m3u8" },
+       { name: "Channel 13 Israel Live (Israel)", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/04f11e34700f1f415d2e631764d7bbae.webp", url: "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/66d4ac8748ce4a9298b4e40e48d1ae2f/index_3.m3u8" },
+       { name: "Channel 14 Live (Israel)", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/fb83f7e5195fafdb3e02bec3e06b62fc.webp", url: "https://n-121-6.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8?bitrate=1928000&audioId=1&videoId=8" },
+//     { name: "Reuters TV", logo: "https://original.fontsinuse.com/fontsinuse.com/use-images/50/50837/50837.png", url: "https://amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv/reuters-reuters-hls/playlist.m3u8" },
+       { name: "Reuters TV", logo: "https://original.fontsinuse.com/fontsinuse.com/use-images/50/50837/50837.png", url: "https://amg00453-reuters-amg00453c1-plex-us-2106.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00453-reuters-reuters-plexus/cb573d1e786c64899cd43e6ecef74582967b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a8764cc59e0a957f39e8fc8b307b24455a9c5a43e6a64ed6abb64244dd6cbfb102488b2f57f3834bccdd1befd4d04696468774ec159cc4f1968246838e8c67ab51ba365a5b7029cb8321a1a337d6a8fa1359d6117a2624f287c98ed341268f4b4f5db7aa85ef25b724c787218e7724fb2eac0fd560c43bf14990e840f6f9e09f5a176ded847a7137ace0978ff91e3aa929aef1be93202ad9be3f5073e441946227319bf88b3381c01e99ff63a6bc7b1235c5de14cecdfcd3a1e0c31adc16cbc1f58a340d1b30534cd50be2bf69dc668c2df880436f0c0314dfef3faeb1d050346d5895c00f84617c97efcbd28f406bb02f7133c569da490a7fc332780e8c00f0992e639a290c914f53de5c328502b1f81bfca9dfea1128f7b9e347ec64fbba1ad89553f039dc38b65a6c9e39574df24a0ec8f7bdf020f011631a6d8a/194/854x480_1706830/index.m3u8" },
+       { name: "Bloomberg Asia", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUym_iIDs16PCfiHTTHYoflBnBu6a1SGHO1X3pDPAKbVx0Ln9xVKGBHQ&s=10", url: "https://www.bloomberg.com/media-manifest/streams/asia.m3u8" },
+       { name: "News Max", logo: "https://play-lh.googleusercontent.com/qaLc2np481zNgvhMHC8URnqaeFKXxB24N6I2uEVQoZPIzmWS5cF2fwrI6Zn3AtenIqCmO28AZY0fkEYOVBuE", url: "https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8" },
+       { name: "Euronews PT Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/fee4bcbe6932805a9862a46b1773a0c1.webp", url: "https://598c4b93.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UGxleF9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/4db304c5-8a1f-4050-895b-885fb43af008/2.m3u8" },
+       { name: "Sky News", logo: "https://logos-world.net/wp-content/uploads/2023/04/Sky-News-Logo.jpg", url: "https://d25w9q07b2mtmw.cloudfront.net/live/master.m3u8" },
+       { name: "CBC News Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/948a6a9c11a6b84c87504f5cc9b7a8c5.webp", url: "https://aegis-cloudfront-1.tubi.video/c71ce9b6-cddb-4cec-b0db-2f09289f8782/master480P.m3u8" },
+       { name: "TLC HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160519-69cb9fe371280-png", url: "https://c1-nimble.mydex.tv/livetvabr/tlc-hd/playlist.m3u8" },
+       { name: "TRT World HD", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160547-69cb9fff89871-png", url: "https://c1-nimble.mydex.tv/livetvabr/trt-world-hd/playlist.m3u8" },
+       { name: "Travel XP", logo: "https://indiantelevision.com/wp-content/uploads/2025/12/Travelxp-new-logo_0-1.jpg", url: "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8" },
+       { name: "Gusto TV Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/34929b38fd8794231ed1bb4f0f59a40c.webp", url: "https://e75fc053c0d2406fb74cdd71d77e1a7f.mediatailor.us-east-1.amazonaws.com/v1/manifest/f4e8c53a8367a5b58e20ce054ea3ce25a3e904d3/RakutenTV-eu_GustoTV/2bd7b6b3-8f9f-4d99-9696-59db20f5f2e1/2.m3u8" },
+       { name: "Delicious", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770378370876.png", url: "https://nomawnoijl.gpcdn.net/akash/delicious/playlist.m3u8" },
+       { name: "ICI RDI Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/3b9717d322c0e9cc76fb3f9ef64a9218.webp", url: "https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master_1200.m3u8" },
+       { name: "CPAC Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/b8848a3fa31cd539e596554269f661fc.webp", url: "https://cpac-ca-live.cdn.vustreams.com/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/live-video_track=1400000.m3u8" },
+       { name: "NBC LX Home", logo: "https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/15F7FB08-92A3-4376-9096-28697AC18E2F/3-1x1.png", url: "https://nbculocallive.akamaized.net/hls/live/2037096/lx/use1.m3u8" },
+       { name: "Fashion TV Paris", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Fashion_TV_logo_2017.svg", url: "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01546-ftv-fashiontv-xiaomi/playlist.m3u8" },
+       { name: "Hala TV", logo: "https://static.wikia.nocookie.net/logopedia/images/7/71/Hala_TV_Logo1.svg", url: "https://stream.panet.com/edge/halaTV/chunks.m3u8" },
+//     { name: "MyTime Movie Network", logo: "https://yt3.googleusercontent.com/_IYldBaqPlDzVmhupfTuZlXegDoAw8cxmK54WY7vjPaTQwEh49Bco2D4lhlZ36cDy_VPv3zROw=s900-c-k-c0x00ffffff-no-rj", url: "https://mytime-tcl.amagi.tv/playlist.m3u8" },	  
+       { name: "MyTime Movie Network", logo: "https://yt3.googleusercontent.com/_IYldBaqPlDzVmhupfTuZlXegDoAw8cxmK54WY7vjPaTQwEh49Bco2D4lhlZ36cDy_VPv3zROw=s900-c-k-c0x00ffffff-no-rj", url: "https://amg00500-studiocitypictu-mytimemovientus-plex-00p3m.amagi.tv/playlist/amg00500-studiocitypictu-mytimemovientus-plex/playlist.m3u8" },
+       { name: "Sky Movie HD", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg8CXav1zTSiHyXGLvQNp0AWHPAj9Jo2dCD_r7nreZng6DSbci1LTZe8&s=10", url: "https://amc-amcespanol-1-us.plex.wurl.tv/4300.m3u8" },
+       { name: "Originals", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770313122372.png", url: "https://nomawnoijl.gpcdn.net/akash/originals/playlist.m3u8" },
+//     { name: "Miramax Movies", logo: "https://images.seeklogo.com/logo-png/9/2/miramax-home-entertainment-logo-png_seeklogo-93272.png", url: "https://linear-798.frequency.stream/dist/tcltv/798/hls/master/playlist.m3u8" },
+       { name: "Miramax Movies", logo: "https://images.seeklogo.com/logo-png/9/2/miramax-home-entertainment-logo-png_seeklogo-93272.png", url: "https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8" },
+       { name: "Universal Movies", logo: "https://static.wikia.nocookie.net/logopedia/images/e/ef/Universal_Pictures_%282005%29.png", url: "https://xumo-xumoent-ch839-d5ey0.fast.nbcuni.com/live/master.m3u8" },
+       { name: "Discovery HD", logo: "https://www.vhv.rs/dpng/d/510-5100411_2019-discovery-channel-logo-hd-png-download.png", url: "https://stream.ottplus.bd/live/discovery_sd_abr/live/discovery_sd/chunks.m3u8" },
+       { name: "ID HD (Investigation Discovery)", logo: "https://w7.pngwing.com/pngs/118/186/png-transparent-investigation-discovery-television-channel-television-show-discovery-inc-id-cards-miscellaneous-television-logo.png", url: "https://stream.ottplus.bd/live/id_hd_abr/live/id_hd/chunks.m3u8" },
+       { name: "Animal Planet HD", logo: "https://upload.wikimedia.org/wikipedia/commons/2/20/2018_Animal_Planet_logo.svg", url: "https://stream.ottplus.bd/live/animal_planet_sd_abr/live/animal_plnet_sd/chunks.m3u8" },
+	   { name: "Love Nature 4K", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QYmTZvwWD3BTe6zpmwJcQXFfeBlIErT1J1bCNQwMPA&s=10", url: "https://bamus-lovenature-lg.amagi.tv/playlist.m3u8" },
+       { name: "Sony One Action HITS", logo: "https://static.wikia.nocookie.net/logopedia/images/0/00/Sony_One_2024.png", url: "https://tinyurl.com/3kwm9jpm" },
+       { name: "Rakuten  Action Movies", logo: "https://image.similarpng.com/file/similarpng/very-thumbnail/2020/06/Logo-rakuten-tv-transparent-PNG.png", url: "https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8" },
+       { name: "Action Hollywood Movies", logo: "https://provider-static.plex.tv/epg/cms/production/c94e3220-9a45-42e9-8bdb-01fc43e0f27c/white_textAction_Hollywood_Movies_logo_dark_-_Angela_Chan.png", url: "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8" },
+       { name: "Hollywood Movies", logo: "https://t3.ftcdn.net/jpg/18/44/05/36/360_F_1844053685_WzGxcXDF7v5dkILbz57av0AKfbXTHPGV.jpg", url: "http://iptv.prosto.tv:7000/ch50/video.m3u8" },
+       { name: "Z Nation", logo: "https://image.pngaaa.com/195/1100195-middle.png", url: "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883098" },
+       { name: "Movie Fone TV", logo: "https://cdn.moviefone.com/legacy/assets/moviefone-tv-playerbg.webp", url: "https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8" },
+       { name: "НТВ HD lm", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVMXhN8VVCbFPuKexnGAs74xEWXuOeSteNUT7oj5AxBPIY7n7LFhqKMM&s=10", url: "http://cdn.ntv.ru/ntv0_hd/tracks-v1a1/rewind-7150.m3u8" },
+       { name: "СТВ Беларусь", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRr0HVH400wpVbBEoHgEcvvRgDz9VFk4cBd48K-RvQg&s=10", url: "http://194.158.222.36:6103" },
+       { name: "ТНВ Татарстан", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD9R6V6s63O2iVOhrNQTC5SGS31uPnYfreShqV7Tbwg&s=10", url: "http://user91229.clients-cdnnow.ru/hls/user91229_1_720/index.m3u8" },
+       { name: "Brat TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3z4KYkMvkP9oK4GHg6sU_oEtM_bJ0BeiTMVaGGiaala45f-VRM--qHM&s=10", url: "https://brat-samsung-us.amagi.tv/playlist.m3u8" },
+       { name: "KINO TV", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/KINO_TV_WERSJE-01.jpg/1280px-KINO_TV_WERSJE-01.jpg", url: "http://vod.tuva.ru/kinotv/tracks-v1a1/mono.m3u8" },
+       { name: "NTV-HIT-HD", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxoEeFEeKh38itN1ZqH18i4W8ob_60pzNTNMYbbhoQaTeGgLEilCDVYy4&s=10", url: "http://cdn.ntv.ru/th_hit/tracks-v1a1/playlist.m3u8" },
+       { name: "World War TV", logo: "https://play-lh.googleusercontent.com/3kKn1xMRBrh9MnYkKAk5UxgmuVgrzswkgHcBLdSQayLTrFBNCvVb5fqy3ZoI40nWOS4ha4C1N7xxDITRXAgbsds", url: "https://aenetworks-worldwartv-rakuten.amagi.tv/1080p-vtt/index.m3u8" },
+       { name: "Mystery TV", logo: "https://hearstnetworkscorp.s3.eu-west-2.amazonaws.com/s3fs-public/styles/brand_mobile/public/2025-03/Mystery_TV_1380%20x%201080.jpg", url: "https://aenetworks-mysterytv-rakuten.amagi.tv/playlist.m3u8" },
+       { name: "Alien Nation", logo: "https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2F7d5598a6-e100-4fab-979a-cbf775aa8aa7%2FAlien-Nation_logo_blue_1500x1000.png", url: "https://linear-888.frequency.stream/dist/xumo/888/hls/master/playlist.m3u8" },
+       { name: "Fox Weather", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fox-weather-logo-stacked-color.svg/1280px-Fox-weather-logo-stacked-color.svg.png", url: "https://247wlive.foxweather.com/stream/index_1280x720.m3u8" },
+       { name: "Xplore", logo: "https://static.wixstatic.com/media/b3a2a2_1927c5ff14684f1c834d5c98bec39515~mv2.jpg/v1/fit/w_2500,h_1330,al_c/b3a2a2_1927c5ff14684f1c834d5c98bec39515~mv2.jpg", url: "https://xplore-vizio.amagi.tv/1080p-cc/index.m3u8" },
+       { name: "Cirque du Soleil Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-l/26fed96e8873f3e9c2e2a3573a4ef43e.webp", url: "https://amg01439-amg01439c1-amgplt0020.playout.now3.amagi.tv/1080p-cc/index.m3u8" },
+       { name: "Classic Arts Showcase", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/34b6cd484508db6e25bb987700ae8d36.webp", url: "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8" },
+       { name: "Wild Earth", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfF5sxB8NY0t4kYlqpvnw7YKdpNIU6R1TpHkPeuObL-ukWJ4cwpFFnKfg&s=10", url: "https://wildearth-plex.amagi.tv/masterR1080p.m3u8" },
+       { name: "Wild Nature", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yjkrHNxxDoxjnamizrEGFZiQqIL0ZobyHuVCB7ABLvizeAZ6XdQV07cy&s=10", url: "https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/491.m3u8" },
+       { name: "Intelligence", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380460488.png", url: "https://nomawnoijl.gpcdn.net/akash/intelligence/playlist.m3u8" },
+	   { name: "Now Rock", logo: "https://img-284.media.info/i/bg/6/6367-1672197098.webp", url: "https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8" },
+       { name: "Now 80's", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-b2e6liq-pd9uIpHOSk-zs3ewKayL0h5u4neG-JAhuIbv6U6yrnZOXQ&s=10", url: "https://lightning-now80s-samsungnz.amagi.tv/playlist.m3u8" },
+       { name: "Music TV", logo: "https://img.magnific.com/premium-vector/modern-creative-branding-idea-collection-business-companies-simple-logos-minimalist_444665-268.jpg?semt=ais_hybrid&w=740&q=80", url: "http://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b3128000.m3u8" },
+       { name: "Retro Music TV", logo: "https://play-lh.googleusercontent.com/fSVDUWdsTrqSdwC8NIXmDmxCkuZbvsrChC6zosvbWvrjptNY15_9jcVPSIgEvDLr0i9cHMw9dx0Rlkz_q90gDw", url: "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8" },
+       { name: "Stingray Classica TV", logo: "https://classica.stingray.com/static/site/classica/site/MetaImage.png", url: "https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8" },
+       { name: "Stingray DJAZZ TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0HZTAUwwFFXDvnwOwgu-zOxtNXWa7efTJZWYu7ZKFq_gqdf_BZq_l_de&s=10", url: "https://lotus.stingray.com/manifest/djazz-djaads-montreal/samsungtvplus/master.m3u8" },
+       { name: "Stingray Naturescape TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlRfZbbU8k3Ks0tS5aaWubLBOKDrLDWhlwRGXmWTWlXKWNVw6rTGVKvv6T&s=10", url: "https://lotus.stingray.com/manifest/naturescape-a003-montreal/samsungtvplus/master.m3u8" },
+       { name: "Movie Music by Stingray TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg9EMsI81Ehj9h217j_M1352M7RDH_y2BmQ27XKw5EQA&s=10", url: "https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8" },
+       { name: "Óčko Star TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvmgw8luwZ3493T6YsejXwn3TWoG4teSPo33mpywMug&s=10", url: "https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8" },
+       { name: "Qello Concerts by Stingray TV", logo: "https://www.anythinklibraries.org/wp-content/uploads/logo-quello.png", url: "https://lotus.stingray.com/manifest/qello-qello001-montreal/samsungtvplus/master.m3u8" },
+       { name: "Xite Hits TV", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQK-3tPMcPm9UF1W0RJ5aH_N3RGsTKSMvOAWUfTi5o0yj0A2RgOOx74s&s=10", url: "https://xite-hitsuk-lg.amagi.tv/playlist.m3u8" },
+       { name: "Kiss Kiss TV", logo: "https://kisskiss.it/fluidstream.tv/kisskiss_tv.png", url: "https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8" },
+       { name: "Trace Urban", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2_ICbdnjcRs5G7nkPEnO8Yz_gZsHXjMf187sN9YWcqA&s", url: "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-traceurban-samsungnz/playlist.m3u8" },
+       { name: "Dance TV", logo: "https://yt3.googleusercontent.com/h3uIBQSMgHa2yEuQEjz5-yKDQsRNAaB9nmDlyxuBEHUSI3gZ95kFLsXXMHyKIUvImJFPadrguw=s900-c-k-c0x00ffffff-no-rj", url: "https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8" },
+       { name: "Party Universe", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770378215384.png", url: "https://nomawnoijl.gpcdn.net/akash/partyuniverse/playlist.m3u8" },		
+	   { name: "Cool Summer Channel", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGASYUC7qUYTUbgov4WyylMEiEsbOibYN5l87gkYQDg&s=10", url: "https://d2hzqddebd4oer.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-468m04kfpf5n7/csts.m3u8" },
+       { name: "Lucky Family", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770381248531.png", url: "https://nomawnoijl.gpcdn.net/akash/luckyfamily/playlist.m3u8" },
+       { name: "Screem", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770312098339.png", url: "https://nomawnoijl.gpcdn.net/akash/screem/playlist.m3u8" },
+	   { name: "Uniques HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347327658.png", url: "https://nomawnoijl.gpcdn.net/akash/uniques/playlist.m3u8" },
+	   { name: "Cineedge HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770347851305.png", url: "https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8" },
+	   { name: "Superrix HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770348388925.png", url: "https://nomawnoijl.gpcdn.net/akash/superrix/playlist.m3u8" },
+
+		
+// Sports
+      { name: "BeIN Sports Extra", logo: "https://metallife.com/wp-content/uploads/2021/09/bein_sports_logos.jpg", url: "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8" },
+      { name: "Bein Sports xtra", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRalu3RrxLFWWPQzijnkuWqwYVnhl0nS78WHdQTs9vxNA&s=10", url: "https://bein-xtra-xumo.amagi.tv/playlist.m3u8" },
+      { name: "DD Sports", logo: "https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png", url: "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8" },
+      { name: "Fighters HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380942670.png", url: "https://nomawnoijl.gpcdn.net/akash/fighter/playlist.m3u8" },
+      { name: "Thunder Er", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380791303.png", url: "https://nomawnoijl.gpcdn.net/akash/thunder/playlist.m3u8" },
+      { name: "Sports Range", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770380601958.png", url: "https://nomawnoijl.gpcdn.net/akash/sportrange/playlist.m3u8" },
+      { name: "Cow Boy+ Sports", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToj9lDOqLblHHacnoZtTPDAjzrvzJWBMp3pyu5wQsru7JYnRMpuqgq67tp&s=10", url: "https://amg17292-amg17292c1-distrotv-us-4170.playouts.now.amagi.tv/playlist/amg17292-tetonridgellc-tetonridgefast-distrotvus/playlist.m3u8" },
+//    { name: "Redbull TV", logo: "https://static.wikia.nocookie.net/logopedia/images/3/3c/Red_Bull_TV.svg", url: "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8" },
+//    { name: "Redbull TV", logo: "https://static.wikia.nocookie.net/logopedia/images/3/3c/Red_Bull_TV.svg", url: "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8" },
+      { name: "Redbull TV", logo: "https://static.wikia.nocookie.net/logopedia/images/3/3c/Red_Bull_TV.svg", url: "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8" },
+      { name: "Trace Sport", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Logo_TRACE_Sports.svg", url: "https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8" },
+      { name: "Horse & Country", logo: "https://upload.wikimedia.org/wikipedia/en/4/49/Horseandcountry.PNG", url: "https://hncfree-samsungau.amagi.tv/playlist.m3u8" },
+      { name: "NBC SPORTS", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/NBC_Sports_stacked_logo_%282012-present%29.svg", url: "https://d1m1xk35ma8qfl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-v4tilgx2y7n7y/master.m3u8" },
+      { name: "Top Barça", logo: "https://m.media-amazon.com/images/I/61Y0xT0wvYL._AC_UF894,1000_QL80_.jpg", url: "https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8" },
+      { name: "UFC", logo: "https://images.stockcake.com/public/a/6/3/a630ea53-691c-4e51-ae38-323372829ace_large/explosive-ufc-art-stockcake.jpg", url: "https://aegis-cloudfront-1.tubi.video/a78ea283-8666-44a1-a0f6-fde5d229ac21/playlist.m3u8" },
+      { name: "WBAL-TV 11 Baltimore Live", logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/f4a0c91657a07471f663f0ffd5d26dc5.webp", url: "https://aegis-cloudfront-1.tubi.video/888aedca-93fb-4aed-bb92-4beb8f1323c6/playlist_webvtt.m3u8" },
+
+
+// Cartoon
+	  { name: "Cartoon Network", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160651-69cba03f14958-png", url: "https://c1-nimble.mydex.tv/livetvabr/cartoon-network/playlist.m3u8" },
+      { name: "Jungle Book", logo: "https://yt3.googleusercontent.com/3TuuHz-v_4DUoONsjOV7Ohly4LNUMkTnhmdMtZJO_vxwd50mXWJlL1oyPOd4IDaSUiVaAsUpbHw=s900-c-k-c0x00ffffff-no-rj", url: "https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8" },
+      { name: "Moonbug for Kids", logo: "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012020/moonbug_kids_on_white.png", url: "https://moonbug-rokuus.amagi.tv/playlist.m3u8" },
+//    { name: "Baby Shark TV", logo: "https://static.wikia.nocookie.net/logopedia/images/c/c7/Pinkfong_Baby_Shark.svg", url: "https://newidco-babysharktv-1-us.lg.wurl.tv/playlist.m3u8" },
+      { name: "Baby Shark TV", logo: "https://static.wikia.nocookie.net/logopedia/images/c/c7/Pinkfong_Baby_Shark.svg", url: "https://newidco-babysharktv-1-eu.rakuten.wurl.tv/2000.m3u8" },
+      { name: "Tom and Jerry HD", logo: "https://toppng.com/uploads/preview/tom-and-jerry-cartoon-logo-11530958763kr0rjegb2w.png", url: "https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8" },
+      { name: "Gopal Bhar HD", logo: "https://upload.wikimedia.org/wikipedia/as/6/67/Gopal_Bhar_animated_TV_series_title_card.jpeg", url: "https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8" },
+
+	  { name: "BuddyStar HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770379038530.png", url: "https://nomawnoijl.gpcdn.net/akash/buddystar/playlist.m3u8" },
+      { name: "Nikki HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770378704923.png", url: "https://nomawnoijl.gpcdn.net/akash/nikky/playlist.m3u8" },
+      { name: "Joy HD", logo: "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770378874717.png", url: "https://nomawnoijl.gpcdn.net/akash/joy/playlist.m3u8" },
+
+// Islamic
+//    { name: "Saudi Quran", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160711-69cba053c8ae3-png", url: "https://c1-nimble.mydex.tv/livetvabr/saudi-quran/playlist.m3u8" },
+      { name: "Saudi Quran", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160711-69cba053c8ae3-png", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8" },
+      { name: "Quran TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160909-69cba0c96b863-png", url: "https://c1-nimble.mydex.tv/livetvabr/quran-tv/playlist.m3u8" },
+      { name: "Qatar TV", logo: "https://resources.mydex.tv/public/images/v1/channels/2026-03-31-160929-69cba0dd2d510-png", url: "https://c1-nimble.mydex.tv/livetvabr/qatar-tv/playlist.m3u8" },
+      { name: "Saudi Sunnah live", logo: "https://i.pinimg.com/564x/6b/d7/3b/6bd73bbf88ef7770f6d5bc347ebcd755.jpg", url: "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8" },
+      { name: "Peace TV Bangla HD", logo: "https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/4f/Peace_TV_Bangla_logo_2015.png", url: "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8" }
+    
+    ];
+
+
+    const container = document.getElementById('buttonContainer');
+    const player = document.getElementById('myPlayer');
+
+    // Create buttons automatically
+    channels.forEach(ch => {
+      const btn = document.createElement('button');
+      btn.className = 'channel-btn';
+      btn.innerHTML = `<img src="${ch.logo}">${ch.name}`;
+      btn.onclick = () => { 
+        player.src = ch.url;
+        player.play();
+      };
+      container.appendChild(btn);
+
+    });
+
+
+
+/* ---------------- EVENT WIRING ---------------- */
+function wire(){
+  // global card click delegation
+  document.addEventListener('click',function(e){
+    var card=e.target.closest('.card');
+    if(card){Detail.open(parseInt(card.getAttribute('data-id'),10),card.getAttribute('data-type'));return;}
+    var sd=e.target.closest('.sd-item');
+    if(sd){Detail.open(parseInt(sd.getAttribute('data-id'),10),sd.getAttribute('data-type'));$('#search-drop').classList.remove('open');return;}
+    var seeall=e.target.closest('[data-seeall]');
+    if(seeall){App.seeAll(seeall.getAttribute('data-seeall'),seeall.getAttribute('data-title'),seeall.getAttribute('data-type'));return;}
+    var heroAct=e.target.closest('[data-act]');
+    if(heroAct){
+      var id=parseInt(heroAct.getAttribute('data-id'),10),tp=heroAct.getAttribute('data-type');
+      if(heroAct.getAttribute('data-act')==='trailer'){Detail.open(id,tp);setTimeout(function(){if($('#play-trailer'))$('#play-trailer').click();},900);}
+      else Detail.open(id,tp);
+      return;
+    }
+    var ott=e.target.closest('.ott-chip');
+    if(ott){
+      $all('.ott-chip').forEach(function(c){c.classList.remove('active');});ott.classList.add('active');
+      var pid=ott.getAttribute('data-prov');
+      if(!pid){App.browse('movie','Trending','fa-fire');return;}
+      S.type='movie';S.isSearch=false;App.show('browse');
+      $('#browse-title').innerHTML='<i class="fas fa-tv"></i> '+esc(ott.textContent.trim());
+      S.genre='';S.lang='';S._provider=pid;
+      Browse.loadProvider(pid);
+      return;
+    }
+    var gchip=e.target.closest('#genre-chips .chip');
+    if(gchip){S.genre=gchip.getAttribute('data-genre');renderGenreChips();Browse.load(true);return;}
+    var tchip=e.target.closest('#type-chips .chip');
+    if(tchip){S.type=tchip.getAttribute('data-type');$all('#type-chips .chip').forEach(function(c){c.classList.remove('active');});tchip.classList.add('active');Browse.load(true);return;}
+    // nav + footer + bottom-nav view buttons
+    var navBtn=e.target.closest('[data-view]');
+    if(navBtn){
+      var v=navBtn.getAttribute('data-view');
+      if(v==='home')App.home();
+      else if(v==='movie')App.browse('movie','Movies','fa-film');
+      else if(v==='tv')App.browse('tv','TV Shows','fa-tv');
+      else if(v==='livetv')App.livetv();
+      else if(v==='mylist')App.mylist();
+      return;
+    }
+    var liveBtn=e.target.closest('[data-live-channel]');
+    if(liveBtn){
+      LiveTV.play(parseInt(liveBtn.getAttribute('data-live-channel'),10));
+      return;
+    }
+    var searchBtn=e.target.closest('[data-search]');
+    if(searchBtn){var sb=$('#search-box');sb.classList.add('mobile-on');setTimeout(function(){$('#search-input').focus();},50);return;}
+    // tabs
+    var tab=e.target.closest('.tab');
+    if(tab){
+      var name=tab.getAttribute('data-tab');
+      $all('.tab').forEach(function(t){t.classList.remove('active');});tab.classList.add('active');
+      $all('.pane').forEach(function(p){p.classList.remove('active');});$('#pane-'+name).classList.add('active');
+      return;
+    }
+    // close search drop on outside click
+    if(!e.target.closest('#search-box'))$('#search-drop').classList.remove('open');
+  });
+
+  $('#logo').addEventListener('click',App.home);
+  $('#modal-x').addEventListener('click',Detail.close);
+  $('#veil').addEventListener('click',function(e){if(e.target===this)Detail.close();});
+  document.addEventListener('keydown',function(e){
+    if($('#veil').classList.contains('open')&&Device.backKey(e)){e.preventDefault();Detail.close();return;}
+    if($('#veil').classList.contains('open')&&Device.tv&&Device.scrollModalKey(e)){e.preventDefault();return;}
+    if(!Device.actionKey(e))return;
+    var target=document.activeElement;
+    if(!target)return;
+    var card=target.closest&&target.closest('.card');
+    if(card){e.preventDefault();Detail.open(parseInt(card.getAttribute('data-id'),10),card.getAttribute('data-type'));return;}
+    var sd=target.closest&&target.closest('.sd-item');
+    if(sd){e.preventDefault();Detail.open(parseInt(sd.getAttribute('data-id'),10),sd.getAttribute('data-type'));$('#search-drop').classList.remove('open');return;}
+    var tab=target.closest&&target.closest('.tab');
+    if(tab){e.preventDefault();tab.click();return;}
+  });
+
+  $('#load-more').addEventListener('click',Browse.more);
+  $('#sort-select').addEventListener('change',function(){S.sort=this.value;Browse.load(true);});
+  $('#lang-select').addEventListener('change',function(){S.lang=this.value;Browse.load(true);});
+  $('#clear-recent').addEventListener('click',Recent.clear);
+  $('#feature-banner').addEventListener('click',function(){App.seeAll('/discover/movie?with_genres=28,53&sort_by=popularity.desc','Action & Thriller','movie');});
+
+  // search
+  var si=$('#search-input');
+  si.addEventListener('input',U.debounce(function(){Search.drop(si.value.trim());},320));
+  si.addEventListener('keydown',function(e){if(e.key==='Enter'&&si.value.trim().length>=2)Search.run(si.value.trim());});
+  $('#search-toggle').addEventListener('click',function(){var sb=$('#search-box');sb.classList.toggle('mobile-on');if(sb.classList.contains('mobile-on'))setTimeout(function(){si.focus();},50);});
+
+  // infinite scroll
+  window.addEventListener('scroll',U.debounce(function(){
+    if(S.view!=='browse'||S.loading)return;
+    if(window.innerHeight+window.scrollY>=document.body.offsetHeight-600)Browse.more();
+  },150));
+
+  // navbar scrolled state
+  window.addEventListener('scroll',function(){$('#nav').classList.toggle('scrolled',window.scrollY>20);});
+}
+
+// provider-based discover
+Browse.loadProvider=function(pid){
+  S.page=1;$('#grid').innerHTML=skeletons(12);
+  $('#load-area').style.display='none';
+  API.fetch('/discover/movie?with_watch_providers='+pid+'&watch_region='+CFG.REGION+'&sort_by=popularity.desc&page=1').then(function(d){
+    var grid=$('#grid');
+    if(!d||!d.results||!d.results.length){grid.innerHTML='<div class="empty">No titles found for this platform in your region.</div>';return;}
+    grid.innerHTML=d.results.filter(function(x){return x.poster_path;}).map(function(x){return cardHTML(x,'movie');}).join('');
+  });
+};
+
+/* ---------------- INIT ---------------- */
+function init(){
+  Device.init();
+  $('#year').textContent=new Date().getFullYear();
+  renderOtt();renderGenreChips();
+  Hero.load();Rows.render();loadStats();
+  Recent.render();
+  // feature banner backdrop
+  API.fetch('/discover/movie?with_genres=28,53&sort_by=popularity.desc&page=1').then(function(d){
+    if(d&&d.results&&d.results.length){
+      var pick=d.results.filter(function(x){return x.backdrop_path;})[0];
+      if(pick)$('#feature-bg').style.backgroundImage='url('+U.backdrop(pick.backdrop_path)+')';
+    }
+  });
+  // genre map for labels
+  API.fetch('/genre/movie/list').then(function(d){if(d&&d.genres)d.genres.forEach(function(g){S.genreMap[g.id]=g.name;});});
+  wire();
+  // deep link #type/id
+  var h=location.hash.match(/#(movie|tv)\/(\d+)/);
+  if(h)setTimeout(function(){Detail.open(parseInt(h[2],10),h[1]);},600);
+}
+
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+else init();
+
+console.log('%c CineVerse — Modern Movie & TV Discovery ✓ ','background:linear-gradient(135deg,#7c5cff,#ff5d8f);color:#fff;font-weight:700;padding:3px 10px;border-radius:4px;');
+
+})();
+//]]>
+</script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/387437488-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AEUoTZrDj8gPL8fQHXXWqU9b7Zou:1781075763217';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d847261708778445689','//bingehall.blogspot.com/','847261708778445689');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '847261708778445689', 'title': 'Bingehall', 'url': 'https://bingehall.blogspot.com/', 'canonicalUrl': 'https://bingehall.blogspot.com/', 'homepageUrl': 'https://bingehall.blogspot.com/', 'searchUrl': 'https://bingehall.blogspot.com/search', 'canonicalHomepageUrl': 'https://bingehall.blogspot.com/', 'blogspotFaviconUrl': 'https://bingehall.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Bingehall - Atom\x22 href\x3d\x22https://bingehall.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Bingehall - RSS\x22 href\x3d\x22https://bingehall.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Bingehall - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/847261708778445689/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/17193350796582376140\x22 /\x3e\n', 'adsenseClientId': 'ca-pub-7724599007189976', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': true, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/a4f7419047e668cf', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Share to X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Bingehall'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Bingehall', 'description': '', 'url': 'https://bingehall.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main-widget-area', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'navMessage': 'No posts.', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1053750561-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/828616780-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+
+
+<!-- ==== Right Button Disable ==== -->	
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+document.addEventListener('keydown', function(e) {
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')
+    ) {
+        e.preventDefault();
+        return false;
+    }
+});
+</script>
+
+</body>
+</html>
