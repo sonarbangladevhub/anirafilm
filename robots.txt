@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
 
-Sitemap: https://sonarbangladevhub.xyz/
+Sitemap: https://sonarbangladevhub.xyz/sitemap.xml
