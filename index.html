@@ -1011,6 +1011,10 @@ if you want to add Auto Play & Next Episode Button & Episode Selector then just 
 		 &chromecast=true
 		 &autonext=true
 		 &&episodes=true
+		 &server=auto
+		 &servericon=true
+		 &pip=true
+		 &setting=true
 */
 	
 	CUSTOM_PLAYERS:[
@@ -1021,7 +1025,7 @@ if you want to add Auto Play & Next Episode Button & Episode Selector then just 
       Set sandbox:false only for licensed players that refuse sandboxed iframe playback.
     */
      
-      { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vidsrc.sbs/embed/movie/${id}?skin=netflix&color=5865f2&autoPlay=true&poster=true&chromecast=true&autonext=true&&episodes=true`, tv:(id,season,episode)=>`https://vidsrc.sbs/embed/tv/${id}/${season}/${episode}` }
+      { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://vidsrc.sbs/embed/movie/${id}?skin=netflix&color=5865f2&autoPlay=true&poster=true&chromecast=true&autonext=true&&episodes=true&server=auto&pip=true`, tv:(id,season,episode)=>`https://vidsrc.sbs/embed/tv/${id}/${season}/${episode}` }
 //    { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://www.vidking.net/embed/movie/${id}?skin=netflix&color=5865f2&autoPlay=true&poster=true&chromecast=true&autonext=true&&episodes=true`, tv:(id,season,episode)=>`https://www.vidking.net/embed/tv/${id}/${season}/${episode}` }
 //    { name: 'Play', icon: 'fa-play', sandbox:false, movie: id=>`https://player.vidlove.cc/embed/movie/${id}?skin=netflix&color=5865f2&autoPlay=true&autoPlay=true&poster=true&chromecast=true&autonext=true&&episodes=true`, tv:(id,season,episode)=>`https://player.vidlove.cc/embed/tv/${id}/${season}/${episode}` }
 
