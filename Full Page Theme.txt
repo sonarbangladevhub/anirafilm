@@ -1,0 +1,121 @@
+<!--- Core theme HTML---> 
+  
+<div class="theme-toggle">
+<span class="icon sun">☀</span>
+
+<label class="switch">
+<input type="checkbox" id="theme-switch">
+<span class="slider"></span>
+</label>
+
+<span class="icon moon">🌙</span>
+</div>
+		
+		
+		
+/* === Core theme CSS === */
+
+:root{
+    --bg:#ffffff;
+    --text:#111;
+    --card:#f2f2f2;
+}
+
+body.dark{
+    --bg:#20252b;
+    --text:#ffffff;
+    --card:#2d3238;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:.35s;
+    font-family:Arial,sans-serif;
+}
+
+.theme-toggle{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.icon{
+    font-size:18px;
+}
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:54px;
+    height:28px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#bbb;
+    border-radius:50px;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.slider:before{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    left:3px;
+    top:3px;
+    background:white;
+    border-radius:50%;
+    transition:.35s;
+}
+
+input:checked + .slider{
+    background:#4caf50;
+}
+
+input:checked + .slider:before{
+    transform:translateX(26px);
+}
+
+
+
+/* --- Core theme JS --- */
+
+const body=document.body;
+const toggle=document.getElementById("theme-switch");
+
+// Load saved theme
+const savedTheme=localStorage.getItem("theme");
+
+if(savedTheme==="dark"){
+    body.classList.add("dark");
+    toggle.checked=true;
+}else if(savedTheme==="light"){
+    body.classList.remove("dark");
+}else{
+    // System preference
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+        body.classList.add("dark");
+        toggle.checked=true;
+    }
+}
+
+// Toggle
+toggle.addEventListener("change",()=>{
+
+    if(toggle.checked){
+        body.classList.add("dark");
+        localStorage.setItem("theme","dark");
+    }else{
+        body.classList.remove("dark");
+        localStorage.setItem("theme","light");
+    }
+
+});
