@@ -1,0 +1,190 @@
+<!-- ==== Clock HTML ==== -->
+<div class="clock-widget">
+
+    <div class="clock-face">
+
+        <div class="clock-hand hour"></div>
+        <div class="clock-hand minute"></div>
+        <div class="clock-hand second"></div>
+
+        <div class="clock-center"></div>
+
+    </div>
+
+    <div class="clock-info">
+        <div class="digital-clock"></div>
+        <div class="date"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+/* ============ Clock CSS ============ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:#fff;
+}
+
+.clock-widget{
+    text-align:center;
+}
+
+.clock-face{
+
+    position:relative;
+    width:320px;
+    height:320px;
+    border:10px solid #fff;
+    border-radius:50%;
+    background:#1e293b;
+    box-shadow:
+    0 0 30px rgba(0,0,0,.5),
+    inset 0 0 20px rgba(255,255,255,.08);
+}
+
+/* Clock Numbers */
+
+.clock-face::before{
+    content:"";
+    position:absolute;
+    inset:15px;
+    border-radius:50%;
+}
+
+/* Ticks */
+
+.clock-face span{
+    position:absolute;
+    width:4px;
+    height:18px;
+    background:#fff;
+    left:50%;
+    top:8px;
+    transform-origin:center 150px;
+}
+
+.clock-hand{
+    position:absolute;
+    left:50%;
+    bottom:50%;
+    transform-origin:bottom;
+    border-radius:10px;
+}
+
+.hour{
+    width:8px;
+    height:80px;
+    background:#fff;
+    margin-left:-4px;
+}
+
+.minute{
+    width:5px;
+    height:110px;
+    background:#00d9ff;
+    margin-left:-2.5px;
+}
+
+.second{
+    width:2px;
+    height:125px;
+    background:#ff3b30;
+    margin-left:-1px;
+}
+
+.clock-center{
+    position:absolute;
+    width:18px;
+    height:18px;
+    background:#fff;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.clock-info{
+    margin-top:25px;
+}
+
+.digital-clock{
+    font-size:34px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.date{
+    margin-top:10px;
+    color:#94a3b8;
+    font-size:18px;
+}
+
+
+<!-- ==== Clock JS ==== -->
+<script>
+const hourHand=document.querySelector(".hour");
+const minuteHand=document.querySelector(".minute");
+const secondHand=document.querySelector(".second");
+
+const digital=document.querySelector(".digital-clock");
+const date=document.querySelector(".date");
+
+const face=document.querySelector(".clock-face");
+
+// Create 12 ticks
+
+for(let i=0;i<12;i++){
+
+    const tick=document.createElement("span");
+
+    tick.style.transform=`translateX(-50%) rotate(${i*30}deg)`;
+
+    face.appendChild(tick);
+
+}
+
+function updateClock(){
+
+    const now=new Date();
+
+    const sec=now.getSeconds();
+    const min=now.getMinutes();
+    const hr=now.getHours();
+
+    const secondDeg=sec*6;
+    const minuteDeg=min*6+sec*0.1;
+    const hourDeg=(hr%12)*30+min*0.5;
+
+    secondHand.style.transform=`translateX(-50%) rotate(${secondDeg}deg)`;
+    minuteHand.style.transform=`translateX(-50%) rotate(${minuteDeg}deg)`;
+    hourHand.style.transform=`translateX(-50%) rotate(${hourDeg}deg)`;
+
+    digital.innerHTML=now.toLocaleTimeString();
+
+    date.innerHTML=now.toLocaleDateString("en-US",{
+        weekday:"long",
+        year:"numeric",
+        month:"long",
+        day:"numeric"
+    });
+
+}
+
+updateClock();
+
+setInterval(updateClock,1000);
+</script>
